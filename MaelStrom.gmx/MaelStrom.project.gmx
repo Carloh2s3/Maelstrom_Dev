@@ -15,7 +15,7 @@
     <sprite>sprites\spr_Hud</sprite>
     <sprite>sprites\spr_Hud_Side</sprite>
     <sprite>sprites\spr_Abi_Used</sprite>
-    <sprite>sprites\spr_</sprite>
+    <sprite>sprites\spr_Abi_Select</sprite>
     <sprite>sprites\spr_MachGun</sprite>
     <sprite>sprites\spr_Missile</sprite>
     <sprite>sprites\spr_Action1_Bar</sprite>

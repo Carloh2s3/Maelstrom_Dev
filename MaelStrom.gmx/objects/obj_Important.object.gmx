@@ -51,7 +51,7 @@ global.DL_Wep6 -= 1
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_index = global.Level_General - 1
+            <string>
 </string>
           </argument>
         </arguments>
@@ -74,7 +74,7 @@ global.DL_Wep6 -= 1
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_sprite(spr_Hud_Side,0,x,y)
+            <string>draw_sprite(spr_Hud_Side,global.Level_General-1,x,y)
 if global.DL_Wep1 &gt; 0
 {
     draw_sprite(spr_Abi_Used,0,x-62,y+2)

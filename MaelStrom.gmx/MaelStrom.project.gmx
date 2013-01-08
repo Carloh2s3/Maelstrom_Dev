@@ -34,6 +34,7 @@
     <sprite>sprites\spr_OC_Guard1_Body</sprite>
     <sprite>sprites\spr_OC_Guard1_Arm1</sprite>
     <sprite>sprites\spr_OC_Guard1_Arm2</sprite>
+    <sprite>sprites\sprite28</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -52,11 +53,13 @@
     <object>objects\obj_Planet_3</object>
     <object>objects\obj_Map</object>
     <object>objects\obj_Planet_Target</object>
+    <object>objects\object12</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room1</room>
     <room>rooms\room0</room>
     <room>rooms\room_map</room>
+    <room>rooms\room_Test_Uni</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

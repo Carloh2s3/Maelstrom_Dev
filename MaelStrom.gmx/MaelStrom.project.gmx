@@ -43,17 +43,18 @@
   <objects name="objects">
     <object>objects\obj_Hayase</object>
     <object>objects\obj_SmallBeam</object>
-    <object>objects\obj_init_game</object>
     <object>objects\obj_MachGun</object>
+    <object>objects\obj_rocket</object>
+    <object>objects\obj_init_game</object>
     <object>objects\obj_READ_THIS</object>
     <object>objects\obj_Important</object>
     <object>objects\object6</object>
     <object>objects\obj_Planet_1</object>
     <object>objects\obj_Planet_2</object>
     <object>objects\obj_Planet_3</object>
+    <object>objects\obj_zoomin_ex</object>
     <object>objects\obj_Map</object>
     <object>objects\obj_Planet_Target</object>
-    <object>objects\object12</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room1</room>

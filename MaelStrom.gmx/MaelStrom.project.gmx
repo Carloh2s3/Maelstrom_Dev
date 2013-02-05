@@ -6,26 +6,31 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
+    <sprites name="skills">
+      <sprite>sprites\spr_Action1_Circle</sprite>
+      <sprite>sprites\spr_A1_Wep2_Mark</sprite>
+      <sprite>sprites\spr_A1_Wep3_Mark</sprite>
+      <sprite>sprites\spr_A1_Wep4_Mark</sprite>
+      <sprite>sprites\spr_A1_Wep6_Mark</sprite>
+      <sprite>sprites\spr_A1_Wep5_Mark</sprite>
+      <sprite>sprites\spr_A1_Wep1_Mark</sprite>
+    </sprites>
+    <sprites name="projectiles">
+      <sprite>sprites\spr_SmallBeam</sprite>
+      <sprite>sprites\spr_BigBeam</sprite>
+      <sprite>sprites\spr_Missile</sprite>
+      <sprite>sprites\spr_Rocket</sprite>
+      <sprite>sprites\spr_MachGun</sprite>
+    </sprites>
     <sprite>sprites\spr_cageeater</sprite>
     <sprite>sprites\spr_init_game</sprite>
     <sprite>sprites\spr_Hayase</sprite>
-    <sprite>sprites\spr_SmallBeam</sprite>
-    <sprite>sprites\spr_BigBeam</sprite>
     <sprite>sprites\spr_SingleEffect</sprite>
     <sprite>sprites\spr_Hud</sprite>
     <sprite>sprites\spr_Hud_Side</sprite>
     <sprite>sprites\spr_Abi_Used</sprite>
     <sprite>sprites\spr_Abi_Select</sprite>
-    <sprite>sprites\spr_MachGun</sprite>
-    <sprite>sprites\spr_Missile</sprite>
     <sprite>sprites\spr_Action1_Bar</sprite>
-    <sprite>sprites\spr_Action1_Circle</sprite>
-    <sprite>sprites\spr_A1_Wep1_Mark</sprite>
-    <sprite>sprites\spr_A1_Wep2_Mark</sprite>
-    <sprite>sprites\spr_A1_Wep3_Mark</sprite>
-    <sprite>sprites\spr_A1_Wep4_Mark</sprite>
-    <sprite>sprites\spr_A1_Wep5_Mark</sprite>
-    <sprite>sprites\spr_A1_Wep6_Mark</sprite>
     <sprite>sprites\spr_Planet_Ex</sprite>
     <sprite>sprites\spr_Planet_Target</sprite>
     <sprite>sprites\spr_OC_scout</sprite>
@@ -35,26 +40,41 @@
     <sprite>sprites\spr_OC_Guard1_Arm1</sprite>
     <sprite>sprites\spr_OC_Guard1_Arm2</sprite>
     <sprite>sprites\sprite28</sprite>
+    <sprite>sprites\sprite29</sprite>
+    <sprite>sprites\spr_shield</sprite>
+    <sprite>sprites\spr_shield_small</sprite>
+    <sprite>sprites\spr_Ice_Bolt</sprite>
+    <sprite>sprites\spr_Fire_Bolt</sprite>
+    <sprite>sprites\spr_Dia_hud</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
   </backgrounds>
   <paths name="paths"/>
+  <fonts name="fonts">
+    <font>fonts\font_dia</font>
+  </fonts>
   <objects name="objects">
     <object>objects\obj_Hayase</object>
     <object>objects\obj_SmallBeam</object>
     <object>objects\obj_MachGun</object>
-    <object>objects\obj_rocket</object>
+    <object>objects\obj_BigBeam</object>
+    <object>objects\obj_Rocket</object>
+    <object>objects\obj_Missile</object>
     <object>objects\obj_init_game</object>
     <object>objects\obj_READ_THIS</object>
     <object>objects\obj_Important</object>
-    <object>objects\object6</object>
+    <object>objects\obj_enemy_parent</object>
     <object>objects\obj_Planet_1</object>
     <object>objects\obj_Planet_2</object>
     <object>objects\obj_Planet_3</object>
     <object>objects\obj_zoomin_ex</object>
     <object>objects\obj_Map</object>
     <object>objects\obj_Planet_Target</object>
+    <object>objects\obj_target</object>
+    <object>objects\obj_BeamShield_Weak_Parent</object>
+    <object>objects\obj_BeamShield_target_small</object>
+    <object>objects\obj_Dia_Test</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room1</room>

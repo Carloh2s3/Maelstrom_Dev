@@ -15,16 +15,23 @@
       <sprite>sprites\spr_A1_Wep5_Mark</sprite>
       <sprite>sprites\spr_A1_Wep1_Mark</sprite>
     </sprites>
-    <sprites name="projectiles">
+    <sprites name="weapons">
       <sprite>sprites\spr_SmallBeam</sprite>
       <sprite>sprites\spr_BigBeam</sprite>
       <sprite>sprites\spr_Missile</sprite>
+      <sprite>sprites\spr_Beam_Missile</sprite>
       <sprite>sprites\spr_Rocket</sprite>
       <sprite>sprites\spr_MachGun</sprite>
+      <sprite>sprites\spr_Ice_Bolt</sprite>
+      <sprite>sprites\spr_Fire_Bolt</sprite>
+      <sprite>sprites\spr_Neutra_Green</sprite>
+      <sprite>sprites\spr_Neutra_Blue</sprite>
+      <sprite>sprites\spr_Neutra_glow</sprite>
     </sprites>
     <sprite>sprites\spr_cageeater</sprite>
     <sprite>sprites\spr_init_game</sprite>
     <sprite>sprites\spr_Hayase</sprite>
+    <sprite>sprites\spr_Hayase_Jet</sprite>
     <sprite>sprites\spr_SingleEffect</sprite>
     <sprite>sprites\spr_Hud</sprite>
     <sprite>sprites\spr_Hud_Side</sprite>
@@ -43,24 +50,25 @@
     <sprite>sprites\sprite29</sprite>
     <sprite>sprites\spr_shield</sprite>
     <sprite>sprites\spr_shield_small</sprite>
-    <sprite>sprites\spr_Ice_Bolt</sprite>
-    <sprite>sprites\spr_Fire_Bolt</sprite>
-    <sprite>sprites\spr_Dia_hud</sprite>
+    <sprite>sprites\spr_Dia_Hud</sprite>
+    <sprite>sprites\spr_font_dia</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
   </backgrounds>
   <paths name="paths"/>
-  <fonts name="fonts">
-    <font>fonts\font_dia</font>
-  </fonts>
+  <fonts name="fonts"/>
   <objects name="objects">
     <object>objects\obj_Hayase</object>
-    <object>objects\obj_SmallBeam</object>
     <object>objects\obj_MachGun</object>
-    <object>objects\obj_BigBeam</object>
     <object>objects\obj_Rocket</object>
+    <object>objects\obj_SmallBeam</object>
+    <object>objects\obj_BigBeam</object>
     <object>objects\obj_Missile</object>
+    <object>objects\obj_Fire_Bolt</object>
+    <object>objects\obj_Fire_Effect</object>
+    <object>objects\obj_Ice_Bolt</object>
+    <object>objects\obj_Ice_Effect</object>
     <object>objects\obj_init_game</object>
     <object>objects\obj_READ_THIS</object>
     <object>objects\obj_Important</object>
@@ -75,6 +83,7 @@
     <object>objects\obj_BeamShield_Weak_Parent</object>
     <object>objects\obj_BeamShield_target_small</object>
     <object>objects\obj_Dia_Test</object>
+    <object>objects\obj_Dia_Testlvl</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room1</room>

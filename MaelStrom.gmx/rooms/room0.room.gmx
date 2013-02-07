@@ -53,6 +53,7 @@
     <instance objName="obj_target" x="288" y="96" name="inst_2A3EF19A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Hayase" x="288" y="224" name="inst_6B0C3CC6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Important" x="640" y="0" name="inst_C1DA49CE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Dia_Testlvl" x="64" y="352" name="inst_E9F4B191" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

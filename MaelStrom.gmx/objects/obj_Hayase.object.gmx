@@ -126,7 +126,7 @@ if keyboard_check(vk_space)
             {
                 instance_create(x,y,obj_Fire_Bolt)
                 global.DL_Wep4 = 10
-                // NOT DONE YET, return for the heat increase. also has balancing issues
+                // NOT DONE YET, heat increase must still be added. also has balancing issues
             }
         }  
     }

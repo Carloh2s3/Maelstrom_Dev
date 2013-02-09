@@ -19,6 +19,7 @@
       <sprite>sprites\spr_SmallBeam</sprite>
       <sprite>sprites\spr_BigBeam</sprite>
       <sprite>sprites\spr_Missile</sprite>
+      <sprite>sprites\spr_Missile_Trace</sprite>
       <sprite>sprites\spr_Beam_Missile</sprite>
       <sprite>sprites\spr_Rocket</sprite>
       <sprite>sprites\spr_MachGun</sprite>
@@ -46,7 +47,6 @@
     <sprite>sprites\spr_OC_Guard1_Body</sprite>
     <sprite>sprites\spr_OC_Guard1_Arm1</sprite>
     <sprite>sprites\spr_OC_Guard1_Arm2</sprite>
-    <sprite>sprites\sprite28</sprite>
     <sprite>sprites\sprite29</sprite>
     <sprite>sprites\spr_shield</sprite>
     <sprite>sprites\spr_shield_small</sprite>
@@ -57,7 +57,6 @@
     <background>background\background0</background>
   </backgrounds>
   <paths name="paths"/>
-  <fonts name="fonts"/>
   <objects name="objects">
     <object>objects\obj_Hayase</object>
     <object>objects\obj_MachGun</object>
@@ -84,8 +83,11 @@
     <object>objects\obj_BeamShield_target_small</object>
     <object>objects\obj_Dia_Test</object>
     <object>objects\obj_Dia_Testlvl</object>
+    <object>objects\obj_Trans_fadeinout</object>
+    <object>objects\obj_CageEater_Logo</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\room4</room>
     <room>rooms\room1</room>
     <room>rooms\room0</room>
     <room>rooms\room_map</room>

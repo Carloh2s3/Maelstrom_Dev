@@ -8,6 +8,7 @@
   <sprites name="sprites">
     <sprites name="skills">
       <sprite>sprites\spr_Action1_Circle</sprite>
+      <sprite>sprites\spr_Action1_Bar</sprite>
       <sprite>sprites\spr_A1_Wep2_Mark</sprite>
       <sprite>sprites\spr_A1_Wep3_Mark</sprite>
       <sprite>sprites\spr_A1_Wep4_Mark</sprite>
@@ -38,7 +39,6 @@
     <sprite>sprites\spr_Hud_Side</sprite>
     <sprite>sprites\spr_Abi_Used</sprite>
     <sprite>sprites\spr_Abi_Select</sprite>
-    <sprite>sprites\spr_Action1_Bar</sprite>
     <sprite>sprites\spr_Planet_Ex</sprite>
     <sprite>sprites\spr_Planet_Target</sprite>
     <sprite>sprites\spr_OC_scout</sprite>
@@ -52,6 +52,8 @@
     <sprite>sprites\spr_shield_small</sprite>
     <sprite>sprites\spr_Dia_Hud</sprite>
     <sprite>sprites\spr_font_dia</sprite>
+    <sprite>sprites\spr_Cursor</sprite>
+    <sprite>sprites\spr_jet_start</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -88,6 +90,8 @@
     <object>objects\obj_Neutra_Glow</object>
     <object>objects\obj_Neutra_Green</object>
     <object>objects\obj_Neutra_Blue</object>
+    <object>objects\obj_Cursor1</object>
+    <object>objects\obj_Cursor2</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room4</room>

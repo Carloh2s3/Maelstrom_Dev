@@ -3,7 +3,7 @@
   <spriteName>spr_Hayase</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-2</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -142,6 +142,20 @@ if keyboard_check(vk_space)
             }
         }
     }
+    if global.Level_General = 7
+    {
+        if global.Weapon_Selected = 6
+        {
+            if global.DL_Wep6 &lt;= 0
+            {
+                instance_create(x,y,obj_Neutra_Glow)
+                instance_create(x-40+random(80),y-40+random(80),obj_Neutra_Green)
+                instance_create(x-60+random(120),y-60+random(120),obj_Neutra_Blue)
+                global.DL_Wep6 = 1
+                // NOT DONE YET, balancing, testing, and not finished
+            }
+        }
+    }
 }
 
 
@@ -206,6 +220,29 @@ if global.Level_General = 6 and global.Weapon_Selected &lt; 1 global.Weapon_Sele
 
 if global.Level_General = 7 and global.Weapon_Selected &gt; 6 global.Weapon_Selected = 1
 if global.Level_General = 7 and global.Weapon_Selected &lt; 1 global.Weapon_Selected = 6
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="5" enumb="103">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>global.Level_General = 7
 </string>
           </argument>
         </arguments>

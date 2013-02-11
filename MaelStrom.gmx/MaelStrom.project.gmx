@@ -85,6 +85,9 @@
     <object>objects\obj_Dia_Testlvl</object>
     <object>objects\obj_Trans_fadeinout</object>
     <object>objects\obj_CageEater_Logo</object>
+    <object>objects\obj_Neutra_Glow</object>
+    <object>objects\obj_Neutra_Green</object>
+    <object>objects\obj_Neutra_Blue</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room4</room>

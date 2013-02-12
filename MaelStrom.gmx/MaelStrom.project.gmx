@@ -54,9 +54,17 @@
     <sprite>sprites\spr_font_dia</sprite>
     <sprite>sprites\spr_Cursor</sprite>
     <sprite>sprites\spr_jet_start</sprite>
+    <sprite>sprites\spr_button_design_simple</sprite>
+    <sprite>sprites\spr_button_back</sprite>
+    <sprite>sprites\spr_button_2</sprite>
+    <sprite>sprites\spr_button_1</sprite>
+    <sprite>sprites\spr_button_test</sprite>
+    <sprite>sprites\spr_button_quit</sprite>
+    <sprite>sprites\spr_button_play</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
+    <background>background\bg_main</background>
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
@@ -92,11 +100,18 @@
     <object>objects\obj_Neutra_Blue</object>
     <object>objects\obj_Cursor1</object>
     <object>objects\obj_Cursor2</object>
+    <object>objects\obj_button_play</object>
+    <object>objects\obj_button_quit</object>
+    <object>objects\obj_button_test</object>
+    <object>objects\obj_button_test_1</object>
+    <object>objects\obj_button_test_2</object>
+    <object>objects\obj_button_test_back</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room4</room>
-    <room>rooms\room1</room>
-    <room>rooms\room0</room>
+    <room>rooms\room_pre</room>
+    <room>rooms\room_main</room>
+    <room>rooms\room_main_test</room>
+    <room>rooms\room_play</room>
     <room>rooms\room_map</room>
     <room>rooms\room_Test_Uni</room>
   </rooms>

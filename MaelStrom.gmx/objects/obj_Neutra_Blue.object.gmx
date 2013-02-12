@@ -29,7 +29,7 @@
 {
     direction = point_direction(x,y,obj_Hayase.x,obj_Hayase.y)
     image_angle = direction
-    speed = 5.8+random(2.2)
+    speed = 7.8+random(2.2)
     image_alpha = 1
     randomnum = choose(1,2)
     if randomnum = 1 instance_destroy()

@@ -56,6 +56,7 @@
     <sprite>sprites\spr_font_dia</sprite>
     <sprite>sprites\spr_Cursor</sprite>
     <sprite>sprites\spr_jet_start</sprite>
+    <sprite>sprites\sprite53</sprite>
     <sprites name="Buttons_Main">
       <sprite>sprites\spr_button_design_simple</sprite>
       <sprite>sprites\spr_button_back</sprite>

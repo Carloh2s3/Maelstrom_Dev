@@ -269,23 +269,6 @@ if burning = 1
     instance_create(x-(sprite_width/2)+random(sprite_width),y-(sprite_height/2)+random(sprite_height),obj_Flames)
 }
 if freezing = 1 or freezing = 2 speed = 0
-if burning = 1 
-{
-    if freezing = 1 or freezing = 2 {burning = 0; freezing = 0}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
 </string>
           </argument>
         </arguments>
@@ -313,6 +296,7 @@ with (other)
 instance_destroy()
 if freezing = 0 freezing = choose(0,1)
 if freezing = 1 {alarm[2] = 90; freezing = 2; repeat(10+random(4)) instance_create(x-5+random(10),y-5+random(10),obj_Ice_Crystals)}
+if burning = 1 {burning = 0; freezing = 0}
 </string>
           </argument>
         </arguments>
@@ -340,6 +324,7 @@ with (other)
 instance_destroy()
 if burning = 0 burning = 1
 if burning = 1 alarm[3] = 90
+if freezing = 1 or freezing = 2 {freezing = 0; burning = 0}
 </string>
           </argument>
         </arguments>

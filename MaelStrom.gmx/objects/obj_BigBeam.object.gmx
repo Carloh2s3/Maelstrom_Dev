@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>speed = 20
+            <string>speed = 25
 direction = 90
 image_angle = direction
 effect_create_below(ef_ring,x,y,1,c_white)

@@ -14,6 +14,8 @@
   <VTile>0</VTile>
   <TextureGroup>0</TextureGroup>
   <For3D>0</For3D>
+  <width>44</width>
+  <height>44</height>
   <frames>
     <frame index="0">images\spr_Abi_Select_0.png</frame>
   </frames>

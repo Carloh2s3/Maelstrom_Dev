@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>MAKE AN ENEMY OBJECT</string>
+            <string>MAKE A FLYER SENTRY OBJECT WHEN NOTICED = 1</string>
           </argument>
         </arguments>
       </action>
@@ -45,7 +45,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>MAKE A FLYER SENTRY SPRITE</string>
+            <string>MAKE HULL SYSTEM</string>
           </argument>
         </arguments>
       </action>

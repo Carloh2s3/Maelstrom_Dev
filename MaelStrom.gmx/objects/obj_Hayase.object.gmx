@@ -224,6 +224,32 @@ if global.Level_General = 7 and global.Weapon_Selected &lt; 1 global.Weapon_Sele
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if keyboard_check_pressed(ord("6")) and global.Level_General &gt;= 7 global.Weapon_Selected = 6
+if keyboard_check_pressed(ord("5")) and global.Level_General &gt;= 6 global.Weapon_Selected = 5
+if keyboard_check_pressed(ord("4")) and global.Level_General &gt;= 5 global.Weapon_Selected = 4
+if keyboard_check_pressed(ord("3")) and global.Level_General &gt;= 4 global.Weapon_Selected = 3
+if keyboard_check_pressed(ord("2")) and global.Level_General &gt;= 3  or global.Level_General = 1 global.Weapon_Selected = 2
+if keyboard_check_pressed(ord("1")) and global.Level_General &gt;= 1 global.Weapon_Selected = 1
+</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="5" enumb="103">
       <action>
@@ -427,6 +453,32 @@ if global.Level_General = 7 and global.Weapon_Selected &lt; 1 global.Weapon_Sele
           <argument>
             <kind>1</kind>
             <string>global.Weapon_Selected -= 1
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="6" enumb="53">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if global.Weapon_Selected = 5 and global.DL_Wep5 &lt;= 0{
+    instance_create(x,y,obj_Ice_Arrow);
+    global.DL_wep5 = 5;
+}
 </string>
           </argument>
         </arguments>

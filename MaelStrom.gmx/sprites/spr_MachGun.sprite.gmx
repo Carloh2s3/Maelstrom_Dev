@@ -14,6 +14,8 @@
   <VTile>0</VTile>
   <TextureGroup>0</TextureGroup>
   <For3D>0</For3D>
+  <width>64</width>
+  <height>32</height>
   <frames>
     <frame index="0">images\spr_MachGun_0.png</frame>
   </frames>

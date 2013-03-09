@@ -14,6 +14,8 @@
   <VTile>0</VTile>
   <TextureGroup>0</TextureGroup>
   <For3D>0</For3D>
+  <width>256</width>
+  <height>256</height>
   <frames>
     <frame index="0">images\spr_shield_0.png</frame>
   </frames>

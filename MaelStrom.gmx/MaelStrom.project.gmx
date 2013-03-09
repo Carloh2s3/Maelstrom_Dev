@@ -30,6 +30,8 @@
       <sprite>sprites\spr_Neutra_Blue</sprite>
       <sprite>sprites\spr_Neutra_glow</sprite>
       <sprite>sprites\spr_Ice_Crystals</sprite>
+      <sprite>sprites\spr_Ice_Crystals_Glow</sprite>
+      <sprite>sprites\spr_Ice_Arrow</sprite>
     </sprites>
     <sprite>sprites\spr_cageeater</sprite>
     <sprite>sprites\spr_init_game</sprite>
@@ -66,6 +68,7 @@
       <sprite>sprites\spr_button_quit</sprite>
       <sprite>sprites\spr_button_play</sprite>
     </sprites>
+    <sprite>sprites\sprite55</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -73,47 +76,63 @@
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
-    <object>objects\obj_Hayase</object>
-    <object>objects\obj_MachGun</object>
-    <object>objects\obj_Rocket</object>
-    <object>objects\obj_SmallBeam</object>
-    <object>objects\obj_BigBeam</object>
-    <object>objects\obj_Missile</object>
-    <object>objects\obj_Fire_Bolt</object>
-    <object>objects\obj_Fire_Effect</object>
-    <object>objects\obj_Ice_Bolt</object>
-    <object>objects\obj_Ice_Effect</object>
-    <object>objects\obj_init_game</object>
+    <objects name="PreGame">
+      <object>objects\obj_init_game</object>
+      <object>objects\obj_Trans_fadeinout</object>
+      <object>objects\obj_CageEater_Logo</object>
+      <object>objects\obj_button_play</object>
+      <object>objects\obj_button_quit</object>
+      <object>objects\obj_button_test</object>
+      <object>objects\obj_button_test_1</object>
+      <object>objects\obj_button_test_2</object>
+      <object>objects\obj_button_test_back</object>
+    </objects>
+    <objects name="OC">
+      <object>objects\obj_enemy_parent</object>
+      <object>objects\obj_OC_Scout</object>
+    </objects>
+    <objects name="map system">
+      <object>objects\obj_Planet_1</object>
+      <object>objects\obj_Planet_2</object>
+      <object>objects\obj_Planet_3</object>
+      <object>objects\obj_zoomin_ex</object>
+      <object>objects\obj_Planet_Target</object>
+      <object>objects\obj_Map</object>
+    </objects>
+    <objects name="Player">
+      <objects name="Weapons">
+        <object>objects\obj_MachGun</object>
+        <object>objects\obj_Rocket</object>
+        <object>objects\obj_SmallBeam</object>
+        <object>objects\obj_BigBeam</object>
+        <object>objects\obj_Missile</object>
+        <object>objects\obj_Fire_Bolt</object>
+        <object>objects\obj_Ice_Bolt</object>
+        <object>objects\obj_Ice_Arrow</object>
+        <objects name="Effects">
+          <object>objects\obj_Fire_Effect</object>
+          <object>objects\obj_Ice_Effect</object>
+          <object>objects\obj_Ice_Effect_Big</object>
+          <object>objects\obj_Flames</object>
+          <object>objects\obj_Ice_Crystals</object>
+          <object>objects\obj_Neutra_Green</object>
+          <object>objects\obj_Neutra_Blue</object>
+          <object>objects\obj_Neutra_Glow</object>
+        </objects>
+      </objects>
+      <object>objects\obj_Hayase</object>
+      <object>objects\obj_Important</object>
+      <object>objects\obj_Cursor1</object>
+      <object>objects\obj_Cursor2</object>
+    </objects>
+    <objects name="dialogue">
+      <object>objects\obj_Dia_Test</object>
+      <object>objects\obj_Dia_Testlvl</object>
+    </objects>
     <object>objects\obj_READ_THIS</object>
-    <object>objects\obj_Important</object>
-    <object>objects\obj_enemy_parent</object>
-    <object>objects\obj_Planet_1</object>
-    <object>objects\obj_Planet_2</object>
-    <object>objects\obj_Planet_3</object>
-    <object>objects\obj_zoomin_ex</object>
-    <object>objects\obj_Map</object>
-    <object>objects\obj_Planet_Target</object>
     <object>objects\obj_target</object>
     <object>objects\obj_BeamShield_Weak_Parent</object>
     <object>objects\obj_BeamShield_target_small</object>
-    <object>objects\obj_Dia_Test</object>
-    <object>objects\obj_Dia_Testlvl</object>
-    <object>objects\obj_Trans_fadeinout</object>
-    <object>objects\obj_CageEater_Logo</object>
-    <object>objects\obj_Neutra_Glow</object>
-    <object>objects\obj_Neutra_Green</object>
-    <object>objects\obj_Neutra_Blue</object>
-    <object>objects\obj_Cursor1</object>
-    <object>objects\obj_Cursor2</object>
-    <object>objects\obj_button_play</object>
-    <object>objects\obj_button_quit</object>
-    <object>objects\obj_button_test</object>
-    <object>objects\obj_button_test_1</object>
-    <object>objects\obj_button_test_2</object>
-    <object>objects\obj_button_test_back</object>
-    <object>objects\obj_OC_Scout</object>
-    <object>objects\obj_Ice_Crystals</object>
-    <object>objects\obj_Flames</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_pre</room>

@@ -14,6 +14,8 @@
   <VTile>0</VTile>
   <TextureGroup>0</TextureGroup>
   <For3D>0</For3D>
+  <width>128</width>
+  <height>70</height>
   <frames>
     <frame index="0">images\spr_OC_Guard1_Body_0.png</frame>
   </frames>

@@ -25,6 +25,7 @@
   <option_android_google_analytics_enable>0</option_android_google_analytics_enable>
   <option_android_google_tracking_id></option_android_google_tracking_id>
   <option_android_iap_suppress_toast>0</option_android_iap_suppress_toast>
+  <option_android_icade_support>false</option_android_icade_support>
   <option_android_icon_170>Configs\Default\android\icons\icon170.png</option_android_icon_170>
   <option_android_icon_36>Configs\Default\android\icons\icon36.png</option_android_icon_36>
   <option_android_icon_48>Configs\Default\android\icons\icon48.png</option_android_icon_48>
@@ -40,6 +41,7 @@
   <option_android_package_company>companyname</option_android_package_company>
   <option_android_package_domain>com</option_android_package_domain>
   <option_android_package_product>MaelStrom</option_android_package_product>
+  <option_android_permission_flags>0</option_android_permission_flags>
   <option_android_pocketchange_enable>0</option_android_pocketchange_enable>
   <option_android_pocketchange_id></option_android_pocketchange_id>
   <option_android_set_device_id></option_android_set_device_id>

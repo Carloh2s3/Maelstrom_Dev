@@ -11,5 +11,7 @@
   <VTile>-1</VTile>
   <TextureGroup>0</TextureGroup>
   <For3D>0</For3D>
+  <width>640</width>
+  <height>480</height>
   <data>images\bg_main.png</data>
 </background>

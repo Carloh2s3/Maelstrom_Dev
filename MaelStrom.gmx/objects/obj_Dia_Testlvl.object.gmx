@@ -104,11 +104,11 @@ if dia_progress &gt; dia_max instance_destroy()
 font_add_sprite(spr_font_dia,32,true,0)
 if dia_progress = 1
 {
-    draw_text(x+100,y+30,"Welcome to the testing room!#Here you can test out the weapons#in the game.")
+    draw_text(x+100,y+30,"Welcome to the test/play room!#Here you can test out the weapons#in the game.")
 }
 if dia_progress = 2
 {
-    draw_text(x+100,y+30,"Use WASD to move and space to fire.#scroll with the mouse to switch weapons.")
+    draw_text(x+100,y+30,"CONTROLS:#Use WASD to move and space to fire.#scroll with the mouse to switch weapons.#left mouse button to do a special attack.")
 }
 if dia_progress = 3
 {

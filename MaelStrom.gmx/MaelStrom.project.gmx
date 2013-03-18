@@ -40,6 +40,7 @@
     <sprite>sprites\spr_SingleEffect</sprite>
     <sprite>sprites\spr_Hud</sprite>
     <sprite>sprites\spr_Hud_Side</sprite>
+    <sprite>sprites\spr_Heat_Gauge</sprite>
     <sprite>sprites\spr_Abi_Used</sprite>
     <sprite>sprites\spr_Abi_Select</sprite>
     <sprite>sprites\spr_Planet_Ex</sprite>

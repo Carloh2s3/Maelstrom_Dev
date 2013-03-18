@@ -27,6 +27,8 @@
             <kind>1</kind>
             <string>global.Weapon_Selected = 1
 image_speed = 0
+frozen = 0
+on_fire = 0
 </string>
           </argument>
         </arguments>
@@ -67,6 +69,7 @@ if keyboard_check(vk_space)
             {
                 instance_create(x,y,obj_MachGun)
                 global.DL_Wep1 = 2
+                global.Heat_Gauge += 2
             }
         }
         if global.Weapon_Selected = 2
@@ -89,10 +92,11 @@ if keyboard_check(vk_space)
                 instance_create(x-6,y,obj_SmallBeam)
                 instance_create(x+6,y,obj_SmallBeam)
                 global.DL_Wep1 = 5
+                global.Heat_Gauge += 1
             }
         }
     }
-    //level 3, under construction
+    //level 3
     if global.Level_General = 3 or global.Level_General = 4 or global.Level_General = 5 or global.Level_General = 6 or global.Level_General = 7
     {
         if global.Weapon_Selected = 2
@@ -101,10 +105,11 @@ if keyboard_check(vk_space)
             {
                 instance_create(x,y,obj_BigBeam)
                 global.DL_Wep2 = 30
+                global.Heat_Gauge += 10
             }
         }
     }
-    //level 4, press up to go to this level, will use numpad in the future
+    //level 4
     if global.Level_General = 4 or global.Level_General = 5 or global.Level_General = 6 or global.Level_General = 7
     {
         if global.Weapon_Selected = 3
@@ -126,7 +131,7 @@ if keyboard_check(vk_space)
             {
                 instance_create(x,y,obj_Fire_Bolt)
                 global.DL_Wep4 = 10
-                // NOT DONE YET, heat increase must still be added. also has balancing issues
+                global.Heat_Gauge += 10
             }
         }  
     }
@@ -138,7 +143,7 @@ if keyboard_check(vk_space)
             {
                 instance_create(x,y,obj_Ice_Bolt)
                 global.DL_Wep5 = 10
-                // NOT DONE YET, testing, heat decrease needs to be added and balancing issues
+                global.Heat_Gauge -= 10
             }
         }
     }
@@ -152,7 +157,8 @@ if keyboard_check(vk_space)
                 instance_create(x-40+random(80),y-40+random(80),obj_Neutra_Green)
                 instance_create(x-60+random(120),y-60+random(120),obj_Neutra_Blue)
                 global.DL_Wep6 = 1
-                // NOT DONE YET, balancing, testing, and not finished
+                if global.Heat_Gauge &gt;= 101 global.Heat_Gauge -= 2
+                if global.Heat_Gauge &lt;= 100 global.Heat_Gauge += 2
             }
         }
     }
@@ -246,6 +252,36 @@ if keyboard_check_pressed(ord("4")) and global.Level_General &gt;= 5 global.Weap
 if keyboard_check_pressed(ord("3")) and global.Level_General &gt;= 4 global.Weapon_Selected = 3
 if keyboard_check_pressed(ord("2")) and global.Level_General &gt;= 3  or global.Level_General = 1 global.Weapon_Selected = 2
 if keyboard_check_pressed(ord("1")) and global.Level_General &gt;= 1 global.Weapon_Selected = 1
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if global.Heat_Gauge &lt;= 2 and frozen = 0 frozen = 1
+if global.Heat_Gauge &gt;= 198 and on_fire = 0 on_fire = 1
+if frozen = 1{
+    instance_create(x,y,obj_Ice_Effect_Big)
+}
+if on_fire = 1{
+    instance_create(x-(sprite_width/2)+random(sprite_width),y-(sprite_height/2)+random(sprite_height),obj_Fire_Effect)
+}
+if global.Heat_Gauge &gt;= 98 and frozen = 1 frozen = 0
+if global.Heat_Gauge &lt;= 103 and on_fire = 1 on_fire = 0
 </string>
           </argument>
         </arguments>
@@ -477,7 +513,8 @@ if keyboard_check_pressed(ord("1")) and global.Level_General &gt;= 1 global.Weap
             <kind>1</kind>
             <string>if global.Weapon_Selected = 5 and global.DL_Wep5 &lt;= 0{
     instance_create(x,y,obj_Ice_Arrow);
-    global.DL_wep5 = 5;
+    global.DL_wep5 = 10;
+    global.Heat_Gauge -= 30
 }
 </string>
           </argument>

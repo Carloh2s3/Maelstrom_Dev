@@ -32,6 +32,7 @@ global.Enemies_Beat = 0
 global.Level_General = 1
 global.Weapon_Selected = 0
 global.Control_Option = 1
+global.Heat_Gauge = 100
 
 global.Hull_Base = 100
 global.Hull = global.Hull_Base

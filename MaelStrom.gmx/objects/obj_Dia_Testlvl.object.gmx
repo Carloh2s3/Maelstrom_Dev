@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>dia_progress = 1
-dia_max = 4
+dia_max = 5
 instance_deactivate_all(true)
 </string>
           </argument>
@@ -109,12 +109,21 @@ if dia_progress = 1
 if dia_progress = 2
 {
     draw_text(x+100,y+30,"CONTROLS:#Use WASD to move and space to fire.#scroll with the mouse to switch weapons.#left mouse button to do a special attack.")
+    draw_sprite(spr_Controls_Tut,0,320,0)
 }
 if dia_progress = 3
 {
-    draw_text(x+100,y+30,"The HUD on the side displays which#weapon you are using, and wether the#cooldown has passed or not.")
+    draw_text(x+100,y+30,"The HUD on the side displays which#weapon you are using, and wether the#cooldown has passed or not.#also, it shows the heat gauge.")
+    draw_sprite(spr_Hud_Side,0,640,0)
+    draw_sprite_ext(spr_Arrow_Tut,0,540,50,1,1,0,c_white,1)
 }
 if dia_progress = 4
+{
+    draw_text(x+100,y+30,"The HUD on the bottom displays how#much health/hull and energy you have left.#it also displays the current amount of ALT and score.")
+    draw_sprite(spr_Hud,0,0,480)
+    draw_sprite_ext(spr_Arrow_Tut,0,80,320,1,1,270,c_white,1)
+}
+if dia_progress = 5
 {
     draw_text(x+100,y+30,"That's it for now! have fun!")
 }

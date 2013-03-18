@@ -70,6 +70,8 @@
       <sprite>sprites\spr_button_play</sprite>
     </sprites>
     <sprite>sprites\sprite55</sprite>
+    <sprite>sprites\spr_Arrow_Tut</sprite>
+    <sprite>sprites\spr_Controls_Tut</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>

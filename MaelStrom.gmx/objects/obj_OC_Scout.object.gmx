@@ -369,8 +369,8 @@ if freezing = 1 or freezing = 2 {freezing = 0; burning = 0}
             <kind>1</kind>
             <string>with (other)
 {
-    effect_create_below(ef_ellipse,x,y,1,c_white)
-    effect_create_below(ef_explosion,x,y,1,c_blue)
+    effect_create_below(ef_ellipse,x,y,0,c_white)
+    effect_create_below(ef_explosion,x,y,0,c_blue)
     instance_destroy()
 }
 hull -= 150
@@ -536,12 +536,11 @@ with (other)
             <kind>1</kind>
             <string>with (other)
 {
-    effect_create_below(ef_ring,x,y,1,c_white)
-    effect_create_below(ef_explosion,x,y,1,c_lime)
+    effect_create_below(ef_ring,x,y,0,c_white)
+    effect_create_below(ef_explosion,x,y,0,c_lime)
     instance_destroy()
 }
 hull -= 150
-
 </string>
           </argument>
         </arguments>

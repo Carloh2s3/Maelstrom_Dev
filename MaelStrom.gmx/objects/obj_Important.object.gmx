@@ -55,8 +55,8 @@ if global.DL_Wep4 &gt;= 1 global.DL_Wep4 -= 1
 if global.DL_Wep5 &gt;= 1 global.DL_Wep5 -= 1
 if global.DL_Wep6 &gt;= 1 global.DL_Wep6 -= 1
 
-if global.Heat_Gauge &gt;= 101 global.Heat_Gauge -= 0.5
-if global.Heat_Gauge &lt;= 100 global.Heat_Gauge += 0.5
+if global.Heat_Gauge &gt;= 101 global.Heat_Gauge -= 0.2
+if global.Heat_Gauge &lt;= 100 global.Heat_Gauge += 0.2
 
 if global.Heat_Gauge &lt;= 200 heat_mode = 3
 if global.Heat_Gauge &lt;= 150 heat_mode = 2

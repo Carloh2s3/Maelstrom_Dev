@@ -3,7 +3,7 @@
   <spriteName>spr_Hayase</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-2</depth>
+  <depth>-3</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -130,7 +130,7 @@ if keyboard_check(vk_space)
             if global.DL_Wep4 &lt;= 0
             {
                 instance_create(x,y,obj_Fire_Bolt)
-                global.DL_Wep4 = 10
+                global.DL_Wep4 = 7
                 global.Heat_Gauge += 10
             }
         }  
@@ -142,7 +142,7 @@ if keyboard_check(vk_space)
             if global.DL_Wep5 &lt;= 0
             {
                 instance_create(x,y,obj_Ice_Bolt)
-                global.DL_Wep5 = 10
+                global.DL_Wep5 = 7
                 global.Heat_Gauge -= 10
             }
         }
@@ -465,7 +465,7 @@ if global.Heat_Gauge &lt;= 103 and on_fire = 1 on_fire = 0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.Weapon_Selected += 1
+            <string>if !collision_circle(x,y,6,obj_Bigweps_Parent,false,true) global.Weapon_Selected += 1
 </string>
           </argument>
         </arguments>
@@ -488,7 +488,7 @@ if global.Heat_Gauge &lt;= 103 and on_fire = 1 on_fire = 0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.Weapon_Selected -= 1
+            <string>if !collision_circle(x,y,6,obj_Bigweps_Parent,false,true) global.Weapon_Selected -= 1
 </string>
           </argument>
         </arguments>
@@ -512,8 +512,9 @@ if global.Heat_Gauge &lt;= 103 and on_fire = 1 on_fire = 0
           <argument>
             <kind>1</kind>
             <string>if global.Weapon_Selected = 5 and global.DL_Wep5 &lt;= 0{
-    instance_create(x,y,obj_Ice_Arrow);
-    global.DL_wep5 = 10;
+    instance_create(x,y,obj_Ice_Arrow)
+    instance_create(x,y,obj_Draw_Action1_Wep5)
+    global.DL_wep5 = 10
     global.Heat_Gauge -= 30
 }
 </string>

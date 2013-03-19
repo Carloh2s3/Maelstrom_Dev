@@ -244,9 +244,10 @@ instance_destroy()
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>nearest = instance_nearest(x,y,obj_Hayase)
-distance = point_distance(x,y,obj_Hayase.x,obj_Hayase.y)
-dir = point_direction(x,y,obj_Hayase.x,obj_Hayase.y)
+            <string>
+if instance_number(obj_Hayase) != 0 nearest = instance_nearest(x,y,obj_Hayase)
+if instance_number(obj_Hayase) != 0 distance = point_distance(x,y,obj_Hayase.x,obj_Hayase.y)
+if instance_number(obj_Hayase) != 0 dir = point_direction(x,y,obj_Hayase.x,obj_Hayase.y)
 if mode = 1  and freezing = 0
 {
     if distance &gt; 120 motion_add(dir,0.5)
@@ -310,7 +311,7 @@ if freezing = 1 or freezing = 2 speed = 0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>hull -= 25
+            <string>hull -= 30
 with (other)
 instance_destroy()
 if freezing = 0 freezing = choose(0,1,1)
@@ -338,7 +339,7 @@ if burning = 1 {burning = 0; freezing = 0}
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>hull -= 25
+            <string>hull -= 30
 with (other)
 instance_destroy()
 if burning = 0 burning = 1

@@ -112,6 +112,7 @@
         <object>objects\obj_Fire_Bolt</object>
         <object>objects\obj_Ice_Bolt</object>
         <object>objects\obj_Ice_Arrow</object>
+        <object>objects\obj_Bigweps_Parent</object>
         <objects name="Effects">
           <object>objects\obj_Fire_Effect</object>
           <object>objects\obj_Ice_Effect</object>
@@ -127,6 +128,10 @@
       <object>objects\obj_Important</object>
       <object>objects\obj_Cursor1</object>
       <object>objects\obj_Cursor2</object>
+      <object>objects\obj_Weapon_Line</object>
+      <object>objects\obj_Weapon_Circle</object>
+      <object>objects\obj_Action1_Wep5_Mark</object>
+      <object>objects\obj_Draw_Action1_Wep5</object>
     </objects>
     <objects name="dialogue">
       <object>objects\obj_Dia_Test</object>

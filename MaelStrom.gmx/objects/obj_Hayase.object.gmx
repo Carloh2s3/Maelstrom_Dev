@@ -131,7 +131,7 @@ if keyboard_check(vk_space)
             {
                 instance_create(x,y,obj_Fire_Bolt)
                 global.DL_Wep4 = 7
-                global.Heat_Gauge += 10
+                if global.Heat_Gauge &gt; 100 global.Heat_Gauge += 10 else global.Heat_Gauge += 5
             }
         }  
     }
@@ -143,7 +143,7 @@ if keyboard_check(vk_space)
             {
                 instance_create(x,y,obj_Ice_Bolt)
                 global.DL_Wep5 = 7
-                global.Heat_Gauge -= 10
+                if global.Heat_Gauge &lt;= 100 global.Heat_Gauge -= 10 else global.Heat_Gauge -= 5
             }
         }
     }

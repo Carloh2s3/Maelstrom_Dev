@@ -60,6 +60,8 @@ global.UPS_Wep3_Ammount = 1
 global.UPS_Wep4_Size = 1
 global.UPS_Wep5_Pierce = 1
 global.UPS_Wep6_Strength = 1
+
+global.Max_Effects = "all"
 </string>
           </argument>
         </arguments>

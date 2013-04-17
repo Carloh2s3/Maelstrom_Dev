@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>heat_mode = 0
+            <string>heat_mode = 0;
 </string>
           </argument>
         </arguments>
@@ -58,10 +58,10 @@ if global.DL_Wep6 &gt;= 1 global.DL_Wep6 -= 1
 if global.Heat_Gauge &gt;= 101 global.Heat_Gauge -= 0.2
 if global.Heat_Gauge &lt;= 100 global.Heat_Gauge += 0.2
 
-if global.Heat_Gauge &lt;= 200 heat_mode = 3
-if global.Heat_Gauge &lt;= 150 heat_mode = 2
-if global.Heat_Gauge &lt;= 100 heat_mode = 1
-if global.Heat_Gauge &lt;= 50 heat_mode = 0
+if global.Heat_Gauge &lt;= 200 {heat_mode = 3};
+if global.Heat_Gauge &lt;= 150 {heat_mode = 2};
+if global.Heat_Gauge &lt;= 100 {heat_mode = 1};
+if global.Heat_Gauge &lt;= 50 {heat_mode = 0};
 
 if global.Heat_Gauge &lt;= 1 global.Heat_Gauge = 1
 if global.Heat_Gauge &gt;= 200 global.Heat_Gauge = 200
@@ -87,9 +87,13 @@ if global.Heat_Gauge &gt;= 200 global.Heat_Gauge = 200
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_sprite(spr_Hud_Side,global.Level_General-1,x,y)
-draw_sprite(spr_Hud,0,0,480)
-draw_sprite_ext(spr_Heat_Gauge,heat_mode,x-7,y+131,1,(global.Heat_Gauge/100)-1,0,c_white,1)
+            <string>if global.Heat_Gauge &lt;= 200 {heat_mode = 3};
+if global.Heat_Gauge &lt;= 150 {heat_mode = 2};
+if global.Heat_Gauge &lt;= 100 {heat_mode = 1};
+if global.Heat_Gauge &lt;= 50 {heat_mode = 0};
+draw_sprite(spr_Hud_Side,global.Level_General-1,x,y);
+draw_sprite(spr_Hud,0,0,480);
+draw_sprite_ext(spr_Heat_Gauge,heat_mode,x-7,y+131,1,(global.Heat_Gauge/100)-1,0,c_white,1);
 
 if global.DL_Wep1 &gt; 0
 {

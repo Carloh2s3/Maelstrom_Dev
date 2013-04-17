@@ -147,6 +147,8 @@
     <object>objects\obj_target</object>
     <object>objects\obj_BeamShield_Weak_Parent</object>
     <object>objects\obj_BeamShield_target_small</object>
+    <object>objects\obj_OC_Guard1_Body</object>
+    <object>objects\obj_OC_Guard1_armR</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_pre</room>

@@ -25,10 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.Weapon_Selected = 1
-image_speed = 0
-frozen = 0
-on_fire = 0
+            <string>global.Weapon_Selected = 1;
+image_speed = 0;
+global.P_frozen = 0;
+global.P_onfire = 0;
 </string>
           </argument>
         </arguments>
@@ -274,16 +274,16 @@ if keyboard_check_pressed(ord("1")) and global.Level_General &gt;= 1 global.Weap
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if global.Heat_Gauge &lt;= 2 and frozen = 0 frozen = 1
-if global.Heat_Gauge &gt;= 198 and on_fire = 0 on_fire = 1
-if frozen = 1{
+            <string>if global.Heat_Gauge &lt;= 2 and global.P_frozen = 0 global.P_frozen = 1
+if global.Heat_Gauge &gt;= 198 and global.P_onfire = 0 global.P_onfire = 1
+if global.P_frozen = 1{
     instance_create(x,y,obj_Ice_Effect_Big)
 }
-if on_fire = 1{
+if global.P_onfire = 1{
     instance_create(x-(sprite_width/2)+random(sprite_width),y-(sprite_height/2)+random(sprite_height),obj_Fire_Effect)
 }
-if global.Heat_Gauge &gt;= 98 and frozen = 1 frozen = 0
-if global.Heat_Gauge &lt;= 103 and on_fire = 1 on_fire = 0
+if global.Heat_Gauge &gt;= 98 and global.P_frozen = 1 global.P_frozen = 0
+if global.Heat_Gauge &lt;= 103 and global.P_onfire = 1 global.P_onfire = 0
 </string>
           </argument>
         </arguments>

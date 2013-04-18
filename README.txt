@@ -34,8 +34,9 @@ the secondary missile launches a user-chosen amount of missiles around you, usef
 the primary fire weapon creates an exploding fireball in a direction.
 the secondary fire weapon drops a fire bomb.
 the primary ice weapon creates a big frigid arrow, which you can use to launch at enemies, or to fight them off like you are holding a sword.
+the secondary ice weapon 
 
 all energy weapons/tools' primary/secondary functions use energy, except for the missiles. and yes, you can spam missiles and no, it is no good for your wallet.
 in fact, the missiles can be the stongest weapon in the game.
 
-i use this game to learn how to use Game Maker: Studio properly, by making complex AIand stuff.
+i use this game to learn how to use Game Maker: Studio properly, by making complex AI and stuff.

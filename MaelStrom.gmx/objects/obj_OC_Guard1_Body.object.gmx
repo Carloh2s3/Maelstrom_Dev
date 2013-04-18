@@ -76,6 +76,7 @@ if action = 3{
     motion_set(dir,dis/8);
     varset = 60;
     if x = gotopos_x and y = gotopos_y action = 4;
+    if dis &lt; 2 {x = gotopos_x; y = gotopos_y};
 }
 if action = 4{
     //rooty toothy aim-and shooty

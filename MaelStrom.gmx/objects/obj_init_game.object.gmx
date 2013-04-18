@@ -25,43 +25,46 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.Level_Selected = 0
-global.Story_Progress = 0
-global.Bosses_Beat = 0
-global.Enemies_Beat = 0
-global.Level_General = 1
-global.Weapon_Selected = 0
-global.Control_Option = 1
-global.Heat_Gauge = 100
+            <string>global.Level_Selected = 0;
+global.Story_Progress = 0;
+global.Bosses_Beat = 0;
+global.Enemies_Beat = 0;
+global.Level_General = 1;
+global.Weapon_Selected = 0;
+global.Control_Option = 1;
+global.Heat_Gauge = 100;
 
-global.Hull_Base = 100
-global.Hull = global.Hull_Base
-global.Energy_Base = 100
-global.Energy = global.Energy_Base
+global.Hull_Base = 100;
+global.Hull = global.Hull_Base;
+global.Energy_Base = 100;
+global.Energy = global.Energy_Base;
 
-global.DL_Wep1 = 0
-global.DL_Wep2 = 0
-global.DL_Wep3 = 0
-global.DL_Wep4 = 0
-global.DL_Wep5 = 0
-global.DL_Wep6 = 0
+global.DL_Wep1 = 0;
+global.DL_Wep2 = 0;
+global.DL_Wep3 = 0;
+global.DL_Wep4 = 0;
+global.DL_Wep5 = 0;
+global.DL_Wep6 = 0;
 
-global.LV_Wep1 = 0
-global.LV_Wep2 = 0
-global.LV_Wep3 = 0
-global.LV_Wep4 = 0
-global.LV_Wep5 = 0
-global.LV_Wep6 = 0
+global.LV_Wep1 = 0;
+global.LV_Wep2 = 0;
+global.LV_Wep3 = 0;
+global.LV_Wep4 = 0;
+global.LV_Wep5 = 0;
+global.LV_Wep6 = 0;
 //all of the above must be 1 to be unlocked, else they can't be used
 
-global.UPS_Wep1_Speed = 1
-global.UPS_Wep2_Power = 1
-global.UPS_Wep3_Ammount = 1
-global.UPS_Wep4_Size = 1
-global.UPS_Wep5_Pierce = 1
-global.UPS_Wep6_Strength = 1
+global.UPS_Wep1_Speed = 1;
+global.UPS_Wep2_Power = 1;
+global.UPS_Wep3_Ammount = 1;
+global.UPS_Wep4_Size = 1;
+global.UPS_Wep5_Pierce = 1;
+global.UPS_Wep6_Strength = 1;
 
-global.Max_Effects = "all"
+global.Max_Effects = "all";
+
+global.P_frozen = 0;
+global.P_onfire = 0;
 </string>
           </argument>
         </arguments>

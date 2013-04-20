@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_angle = point_direction(x,y,instance_nearest(x,y,obj_enemy_parent).x,instance_nearest(x,y,obj_enemy_parent).y)-160-random(40)
+            <string>image_angle = point_direction(x,y,instance_nearest(x,y,obj_OC_Parent).x,instance_nearest(x,y,obj_OC_Parent).y)-160-random(40)
 image_yscale = 0.5 + random(0.5)
 image_xscale = 0.7 + random(0.3)
 image_alpha = 0.3 + random(0.4)
@@ -51,12 +51,12 @@ image_alpha = 0.3 + random(0.4)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if collision_circle(x,y,6,obj_enemy_parent,false,false)
+            <string>if collision_circle(x,y,6,obj_OC_Parent,false,false)
 {
-    if instance_nearest(x,y,obj_enemy_parent).freezing = 0 instance_destroy() //NOT DONE, needs more effectery
+    if instance_nearest(x,y,obj_OC_Parent).freezing = 0 instance_destroy() //NOT DONE, needs more effectery
 }
 else 
-if ! collision_circle(x,y,6,obj_enemy_parent,false,false) instance_destroy()
+if ! collision_circle(x,y,6,obj_OC_Parent,false,false) instance_destroy()
 </string>
           </argument>
         </arguments>

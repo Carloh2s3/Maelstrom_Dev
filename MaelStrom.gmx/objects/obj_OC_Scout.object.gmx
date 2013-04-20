@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>obj_enemy_parent</parentName>
+  <parentName>obj_OC_Parent</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -106,8 +106,7 @@ OC_ID = 1
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>effect_create_below(ef_explosion,x,y,1,c_orange)
-effect_create_below(ef_ellipse,x,y,1,c_white)
+            <string>instance_create(x,y,obj_Ex_Simple)
 </string>
           </argument>
         </arguments>
@@ -311,10 +310,7 @@ if freezing = 1 or freezing = 2 speed = 0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>hull -= 30
-with (other)
-instance_destroy()
-if freezing = 0 freezing = choose(0,1,1)
+            <string>if freezing = 0 freezing = choose(0,1,1)
 if freezing = 1 {alarm[2] = 90; freezing = 2; repeat(10+random(4)) instance_create(x-5+random(10),y-5+random(10),obj_Ice_Crystals)}
 if burning = 1 {burning = 0; freezing = 0}
 </string>
@@ -339,41 +335,9 @@ if burning = 1 {burning = 0; freezing = 0}
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>hull -= 30
-with (other)
-instance_destroy()
-if burning = 0 burning = 1
+            <string>if burning = 0 burning = 1
 if burning = 1 alarm[3] = 50+random(40)
 if freezing = 1 or freezing = 2 {freezing = 0; burning = 0}
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_Missile">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>with (other)
-{
-    effect_create_below(ef_ellipse,x,y,0,c_white)
-    effect_create_below(ef_explosion,x,y,0,c_blue)
-    instance_destroy()
-}
-hull -= 150
 </string>
           </argument>
         </arguments>
@@ -480,96 +444,6 @@ hull -= 150
 direction = point_direction(x,y,(other).x,(other).y)-210+random(60)
 alarm[1] = 10
 mode = 5
-with (other)
-instance_destroy()
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_SmallBeam">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>hull -= 18
-with (other)
-{
-    effect_create_above(ef_ellipse,x,y,0,c_yellow)
-    effect_create_above(ef_spark,x,y,0,c_yellow)
-    instance_destroy()
-}
-
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_Rocket">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>with (other)
-{
-    effect_create_below(ef_ring,x,y,0,c_white)
-    effect_create_below(ef_explosion,x,y,0,c_lime)
-    instance_destroy()
-}
-hull -= 150
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_MachGun">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>hull -= 14
-with (other)
-{
-    effect_create_above(ef_ring,x,y,0,c_yellow)
-    instance_destroy()
-}
-
 </string>
           </argument>
         </arguments>

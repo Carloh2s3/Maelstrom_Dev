@@ -77,6 +77,10 @@
     <sprite>sprites\sprite55</sprite>
     <sprite>sprites\spr_Arrow_Tut</sprite>
     <sprite>sprites\spr_Controls_Tut</sprite>
+    <sprite>sprites\spr_Bullet_long1</sprite>
+    <sprite>sprites\spr_Bullet_Round1</sprite>
+    <sprite>sprites\spr_Ex_Beam</sprite>
+    <sprite>sprites\spr_Ex_Flare</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -97,8 +101,10 @@
       <object>objects\obj_button_test_back</object>
     </objects>
     <objects name="OC">
-      <object>objects\obj_enemy_parent</object>
       <object>objects\obj_OC_Scout</object>
+      <object>objects\obj_OC_Parent</object>
+      <object>objects\obj_OC_Guard1_Body</object>
+      <object>objects\obj_OC_Guard1_armR</object>
     </objects>
     <objects name="map system">
       <object>objects\obj_Planet_1</object>
@@ -147,8 +153,12 @@
     <object>objects\obj_target</object>
     <object>objects\obj_BeamShield_Weak_Parent</object>
     <object>objects\obj_BeamShield_target_small</object>
-    <object>objects\obj_OC_Guard1_Body</object>
-    <object>objects\obj_OC_Guard1_armR</object>
+    <object>objects\obj_Bullet_Long1</object>
+    <object>objects\obj_Bullet_Round1</object>
+    <object>objects\obj_Ex_Flare</object>
+    <object>objects\obj_Ex_Beam</object>
+    <object>objects\obj_Ex_Simple</object>
+    <object>objects\obj_clickboom</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_pre</room>

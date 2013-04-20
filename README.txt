@@ -25,16 +25,19 @@ this game will be hard, and if you don't pay attention to the rythm in which the
 fortunately, your arsenal doesn't only consist of weapons, you also have lots of cool utilities.
 like the primary neutra, which will make an energy wave, which pushes back enemies (not kill them).
 the secondary neutra creates a force shield, with that you can deflect attacks or block lasers.
-the primary small beam is a dash in the direction of the mouse, depending on the charge.
-the secondary small beam will speed up al of your attacks for a short period of time.
-the primary big beam charges a blast of plasma, which will damage enemies severely, especially big ones.
-the secondary big beam creates a laser in front of you, damaging enemies very accurately.
-the primary missiles launches a user-chosen amount of missiles in a direction.
+the primary small beam is a dash in the direction of the mouse, depending on the charge. watch where you dash towards!
+the secondary small beam will speed up al of your attacks for a short period of time. bosses will not like this one.
+the primary big beam charges a blast of plasma, which will damage enemies severely, especially big ones. this blast also destroys bullets.
+the secondary big beam creates a laser in front of you, damaging enemies very accurately. rips through thick armor plates.
+the primary missiles launches a user-chosen amount of missiles in a direction. don't know which enemy to attack first? attack them all at once!
 the secondary missile launches a user-chosen amount of missiles around you, useful for tight situations and against asteroids.
-the primary fire weapon creates an exploding fireball in a direction.
-the secondary fire weapon drops a fire bomb.
-the primary ice weapon creates a big frigid arrow, which you can use to launch at enemies, or to fight them off like you are holding a sword.
-the secondary ice weapon 
+the primary fire weapon creates an exploding fireball in a direction. for remote detonation.
+*the secondary fire weapon enhances your fire attacks and reduces the heat generated from it greatly, but your temperature is higher too. you cannot be set on fire.*
+**the primary ice weapon creates a big frigid arrow, which you can use to launch at enemies, or to fight them off like you are holding a sword. the arrow has 1000 life.**
+*the secondary ice weapon enhances your ice attacks and increases the temperature generated from it greatly. your temperature is set to near freezing, but you cannot freeze.*
+
+*to cancel a certain temperature configuration, you need to cool down/warm up with neutra.*
+**the ice arrow will shatter on impact when hitting a flagship, shield pillar or any big enemy.**
 
 all energy weapons/tools' primary/secondary functions use energy, except for the missiles. and yes, you can spam missiles and no, it is no good for your wallet.
 in fact, the missiles can be the stongest weapon in the game.

@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>target=instance_nearest(x,y,obj_enemy_parent);
+            <string>target=instance_nearest(x,y,obj_OC_Parent);
 time_left = room_speed*10
 speed=3;
 direction = 90
@@ -53,7 +53,7 @@ image_angle = direction
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>target=instance_nearest(x,y,obj_enemy_parent);
+            <string>target=instance_nearest(x,y,obj_OC_Parent);
 if instance_exists(target)
 {
     motion_add(point_direction(x,y,target.x,target.y),0.5);

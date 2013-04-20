@@ -55,6 +55,7 @@
     <instance objName="obj_OC_Scout" x="352" y="32" name="inst_FE596292" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_OC_Scout" x="288" y="32" name="inst_D75746D6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_OC_Scout" x="224" y="32" name="inst_4F94629A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_OC_Guard1_Body" x="320" y="-32" name="inst_189D01EB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Hayase" x="288" y="384" name="inst_6B0C3CC6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>

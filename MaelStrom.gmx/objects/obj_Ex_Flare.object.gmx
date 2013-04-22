@@ -31,6 +31,7 @@ alarm[0] = 3;
 stuff = 0;
 image_xscale = 0.8 + random(0.6);
 image_yscale = image_xscale;
+image_angle = random(360);
 </string>
           </argument>
         </arguments>

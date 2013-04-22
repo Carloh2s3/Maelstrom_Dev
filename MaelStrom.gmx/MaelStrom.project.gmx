@@ -52,6 +52,7 @@
     <sprite>sprites\spr_OC_Guard1_Body</sprite>
     <sprite>sprites\spr_OC_Guard1_Arm1</sprite>
     <sprite>sprites\spr_OC_Guard1_Arm2</sprite>
+    <sprite>sprites\spr_OC_Armmech</sprite>
     <sprite>sprites\sprite29</sprite>
     <sprite>sprites\spr_shield</sprite>
     <sprite>sprites\spr_shield_small</sprite>
@@ -59,7 +60,6 @@
     <sprite>sprites\spr_font_dia</sprite>
     <sprite>sprites\spr_Cursor</sprite>
     <sprite>sprites\spr_jet_start</sprite>
-    <sprite>sprites\spr_OC_Armmech</sprite>
     <sprites name="Buttons_Main">
       <sprite>sprites\spr_button_design_simple</sprite>
       <sprite>sprites\spr_button_particles_amount</sprite>
@@ -81,6 +81,8 @@
     <sprite>sprites\spr_Bullet_Round1</sprite>
     <sprite>sprites\spr_Ex_Beam</sprite>
     <sprite>sprites\spr_Ex_Flare</sprite>
+    <sprite>sprites\spr_Chargeball</sprite>
+    <sprite>sprites\sprite70</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>

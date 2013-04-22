@@ -6,8 +6,8 @@
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
-  <bbox_left>7</bbox_left>
-  <bbox_right>56</bbox_right>
+  <bbox_left>4</bbox_left>
+  <bbox_right>59</bbox_right>
   <bbox_top>7</bbox_top>
   <bbox_bottom>58</bbox_bottom>
   <HTile>0</HTile>
@@ -20,5 +20,7 @@
   <height>64</height>
   <frames>
     <frame index="0">images\spr_OC_Armmech_0.png</frame>
+    <frame index="1">images\spr_OC_Armmech_1.png</frame>
+    <frame index="2">images\spr_OC_Armmech_2.png</frame>
   </frames>
 </sprite>

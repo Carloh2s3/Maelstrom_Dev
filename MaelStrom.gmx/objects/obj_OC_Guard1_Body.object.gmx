@@ -87,7 +87,9 @@ hull = 500;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(x-35+random(70),y+random(20),obj_Ex_Simple);
+            <string>instance_create(x,y,obj_Ex_Simple);
+instance_create(x-30,y+10,obj_Ex_Simple);
+instance_create(x+30,y+10,obj_Ex_Simple);
 </string>
           </argument>
         </arguments>

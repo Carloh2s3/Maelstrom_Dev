@@ -51,11 +51,11 @@ global.P_onfire = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if keyboard_check(ord("A")) and hspeed &gt; -8 hspeed -= 0.75
-if keyboard_check(ord("S")) and vspeed &lt; 8 vspeed += 0.75
-if keyboard_check(ord("D")) and hspeed &lt; 8 hspeed += 0.75
-if keyboard_check(ord("W")) and vspeed &gt; -8 vspeed -= 0.75
-if speed &gt; 0 speed -= 0.25
+            <string>if keyboard_check(ord("A")) and hspeed &gt; -8 hspeed -= 1
+if keyboard_check(ord("S")) and vspeed &lt; 8 vspeed += 1
+if keyboard_check(ord("D")) and hspeed &lt; 8 hspeed += 1
+if keyboard_check(ord("W")) and vspeed &gt; -8 vspeed -= 1
+if speed &gt; 0 speed -= 0.5
 if speed &lt; 0.2 speed = 0
 
 if keyboard_check(vk_space)

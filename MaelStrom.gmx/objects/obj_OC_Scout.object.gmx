@@ -34,7 +34,7 @@ mode = 1
 freezing = 0
 burning = 0
 global.noticed = 0
-hull = 100
+hull = 50
 OC_ID = 1
 </string>
           </argument>
@@ -106,7 +106,7 @@ OC_ID = 1
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(x,y,obj_Ex_Simple)
+            <string>if !y &lt; -50 instance_create(x,y,obj_Ex_Simple)
 </string>
           </argument>
         </arguments>
@@ -243,8 +243,7 @@ instance_destroy()
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-if instance_number(obj_Hayase) != 0 nearest = instance_nearest(x,y,obj_Hayase)
+            <string>if instance_number(obj_Hayase) != 0 nearest = instance_nearest(x,y,obj_Hayase)
 if instance_number(obj_Hayase) != 0 distance = point_distance(x,y,obj_Hayase.x,obj_Hayase.y)
 if instance_number(obj_Hayase) != 0 dir = point_direction(x,y,obj_Hayase.x,obj_Hayase.y)
 if mode = 1  and freezing = 0
@@ -310,7 +309,10 @@ if freezing = 1 or freezing = 2 speed = 0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if freezing = 0 freezing = choose(0,1,1)
+            <string>hull -= 30
+with (other)
+instance_destroy()
+if freezing = 0 freezing = choose(0,1,1)
 if freezing = 1 {alarm[2] = 90; freezing = 2; repeat(10+random(4)) instance_create(x-5+random(10),y-5+random(10),obj_Ice_Crystals)}
 if burning = 1 {burning = 0; freezing = 0}
 </string>
@@ -335,7 +337,11 @@ if burning = 1 {burning = 0; freezing = 0}
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if burning = 0 burning = 1
+            <string>hull -= 30
+with (other)
+instance_destroy()
+
+if burning = 0 burning = 1
 if burning = 1 alarm[3] = 50+random(40)
 if freezing = 1 or freezing = 2 {freezing = 0; burning = 0}
 </string>
@@ -444,6 +450,7 @@ if freezing = 1 or freezing = 2 {freezing = 0; burning = 0}
 direction = point_direction(x,y,(other).x,(other).y)-210+random(60)
 alarm[1] = 10
 mode = 5
+with (other) instance_destroy();
 </string>
           </argument>
         </arguments>

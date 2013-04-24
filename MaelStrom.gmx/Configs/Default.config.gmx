@@ -123,9 +123,10 @@
   <option_ios_iphone_splash_png>Configs\Default\ios\iPhonesplash.png</option_ios_iphone_splash_png>
   <option_ios_major_version>1</option_ios_major_version>
   <option_ios_minor_version>0</option_ios_minor_version>
-  <option_ios_orient_landscape>true</option_ios_orient_landscape>
-  <option_ios_orient_portrait>true</option_ios_orient_portrait>
-  <option_ios_orientation>2</option_ios_orientation>
+  <option_ios_orient_landscape>-1</option_ios_orient_landscape>
+  <option_ios_orient_landscape_right>-1</option_ios_orient_landscape_right>
+  <option_ios_orient_portrait>-1</option_ios_orient_portrait>
+  <option_ios_orient_portrait_upside_down>-1</option_ios_orient_portrait_upside_down>
   <option_ios_provisioning>&lt; Press refresh to fetch provisioning list from Mac&gt;</option_ios_provisioning>
   <option_ios_splash_png>Configs\Default\ios\splash.png</option_ios_splash_png>
   <option_ios_texture_page>1024</option_ios_texture_page>
@@ -187,7 +188,9 @@
   <option_sync_vertex>0</option_sync_vertex>
   <option_textureGroup0_border>2</option_textureGroup0_border>
   <option_textureGroup0_nocropping>0</option_textureGroup0_nocropping>
+  <option_textureGroup0_parent>&lt;none&gt;</option_textureGroup0_parent>
   <option_textureGroup0_scaled>0</option_textureGroup0_scaled>
+  <option_textureGroup0_targets>$7fffffffffffffff</option_textureGroup0_targets>
   <option_textureGroup_count>1</option_textureGroup_count>
   <option_textureGroups0>Default</option_textureGroups0>
   <option_tizen_WebGL>0</option_tizen_WebGL>

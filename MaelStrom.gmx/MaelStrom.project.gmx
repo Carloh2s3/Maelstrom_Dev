@@ -89,6 +89,9 @@
     <background>background\bg_main</background>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\script_enemyspawn.gml</script>
+  </scripts>
   <objects name="objects">
     <object>objects\obj_Effects_Parent</object>
     <objects name="PreGame">
@@ -107,6 +110,7 @@
       <object>objects\obj_OC_Parent</object>
       <object>objects\obj_OC_Guard1_Body</object>
       <object>objects\obj_OC_Guard1_armR</object>
+      <object>objects\obj_OC_Armmech</object>
     </objects>
     <objects name="map system">
       <object>objects\obj_Planet_1</object>
@@ -161,6 +165,8 @@
     <object>objects\obj_Ex_Beam</object>
     <object>objects\obj_Ex_Simple</object>
     <object>objects\obj_clickboom</object>
+    <object>objects\obj_ChargeballR</object>
+    <object>objects\obj_ChargeballL</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_pre</room>

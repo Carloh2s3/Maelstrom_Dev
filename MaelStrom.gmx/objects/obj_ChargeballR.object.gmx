@@ -74,11 +74,11 @@ image_yscale = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if charge &lt; 20{
+            <string>if charge &lt; 40{
     charge += 1;
-    image_xscale = (100/20)*charge/100;
+    image_xscale = (100/40)*charge/100;
     image_yscale = image_xscale;
-    if charge = 20{
+    if charge = 40{
         speed = 12;
         if instance_number(obj_Hayase) &gt; 0{
             if point_direction(x,y,obj_Hayase.x,obj_Hayase.y) &lt; 320 and

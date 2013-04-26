@@ -1,0 +1,47 @@
+modules Maelstrom:
+these parts can be placed in one of three slots in your inventory. you cannot have spare modules.
+if you buy a module with ALT, you can replace one of the three existing modules.
+you can have multiple of the same module installed, remember that this is not aways wise for every level.
+you'll find yourself buying modules for your ship constantly. modules are not neccesary for the completion of the game though.
+every module works as an upgrade, even if a module looks purely aestethic.
+
+0-close proximity detector: gives a 30% chance to evade bullets when hit. (bullets will change color to green if evasion is successful, als works on lasers/beams)
+1-ancient novacore: beam weapons are 1.5 times more powerful, and the heat increase is nullified.
+2-missile rack: you can carry an extra 100 missiles.
+3-missile warheads: missiles are 1.3 times more powerful, and have a blast radius of 20.
+4-absorbtion: force blast and force shield now absorb bullets, replenishing hull and energy a little. (bullets will change color to yellow if absorbed, does not work on lasers/beams)
+5-discharge: force blast and force shield have an electrical element, and can now do damage.
+6-aluminum heat bulk: heat reduces 2 times faster.
+7-heating system: cold warms up 2 times faster.
+8-overclock: all weapons fire 1.3 times faster.
+9-thick carbonsteel plate: resistant against beams once per level, and (if armor isn't damaged by beam) damage is halved. (beams damage you severely)
+10-reactive plating: as long as your energy lasts, reduces any incoming damage by one third.
+11-energy capacitor: increases energy capacity by 100, and increases energy replenishment.
+12-overcharge: charged weapons, such as plasma cannon, frigid arrow and fire blast, can be overcharged to 1.5 times their original strength.
+13-legendary: all weapons are 1.2 times more powerful.
+14-ace: movement speed acceleration and maximum speed becomes 1.5 times faster, also stops faster.
+15-lockon system: allows beam type weapons to home into enemies, selected by the pilot. if no target is selected, the weapons will fire according to their original settings.
+16-unmelting ice: Frigid arrow has 500 more health, ice bolt leaves a mist of cold behind (freezing enemies instantly), and ice mode works 1.5 times better. 
+      being frozen is now harder to escape from, and your temperature goes down faster when using ice weapons.
+17-black flames: flame blast has a 1.5 times bigger radius, fire bolt leaves a trail of ember behind (burning enemies who fly into it), and fire mode works 1.5 times better. 
+      being set on fire is now harder to escape from, and your heat increases more when using fire weapons.
+18-royal power: smaller enemies would rather stay at a distance from you now, bigger enemies are not affected.
+19-Doujin style: all normal weapons fire differently. this module is not entirely aestethic, because of the fact that you can now spam every weapon. 
+      a bullet of a weapon deals half the damage, but you fire almost 2.4 times more bullets.
+
+powerful combinations (also achievements):
+
+defensive measures: 0-4-9
+paranoid Hayase: 0-9-10
+everything for guns: 8-12-13
+bullet hell qualified: 4-8-19
+elemental chaos: 5-16-17 THIS COMBINATION IS DANGEROUS
+hell on Yllun: 6-11-17
+frozen planet: 7-11-16
+special attack: 5-11-12
+at supersonic speed: 14-18-19
+Neutra is my job: 4-5-11
+IMA FIRING MA BLAZOR: 1-8-9
+balanced fighter: 1-3-9
+missile cannon: 2-3-13
+i guess he's cheating:1-8-15

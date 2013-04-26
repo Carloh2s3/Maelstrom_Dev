@@ -105,8 +105,8 @@ if action = 1{
     if holdingR &gt; 0 {holdingR -= 1;image_index = 1};
     if holdingL &gt; 0 {holdingL -= 1;image_index = 2};
     if holdingR = 0 and holdingL = 0 image_index = 0;
-    if varset = 170 {holdingR = 20; image_index = 1; instance_create(x+20,y,obj_ChargeballR)};
-    if varset = 80 {holdingL = 20; image_index = 2; instance_create(x-20,y,obj_ChargeballL)};
+    if varset = 170 {holdingR = 40; image_index = 1; instance_create(x+20,y-7,obj_ChargeballR)};
+    if varset = 80 {holdingL = 40; image_index = 2; instance_create(x-20,y-7,obj_ChargeballL)};
     if varset &lt; 1 action = 2;
 }
 if action = 2{

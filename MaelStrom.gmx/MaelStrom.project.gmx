@@ -32,33 +32,48 @@
       <sprite>sprites\spr_Ice_Crystals</sprite>
       <sprite>sprites\spr_Ice_Crystals_Glow</sprite>
       <sprite>sprites\spr_Ice_Arrow</sprite>
+      <sprite>sprites\spr_Smallbeam2</sprite>
+      <sprite>sprites\spr_Bigbeam2</sprite>
+      <sprite>sprites\spr_Icebolt2</sprite>
+      <sprite>sprites\spr_Firebolt2</sprite>
+      <sprite>sprites\spr_Forceblast</sprite>
     </sprites>
     <sprite>sprites\spr_cageeater</sprite>
     <sprite>sprites\spr_init_game</sprite>
     <sprite>sprites\spr_Hayase</sprite>
     <sprite>sprites\spr_Hayase_Jet</sprite>
     <sprite>sprites\spr_SingleEffect</sprite>
-    <sprite>sprites\spr_Hud</sprite>
-    <sprite>sprites\spr_Hud_Side</sprite>
-    <sprite>sprites\spr_Heat_Gauge</sprite>
-    <sprite>sprites\spr_Abi_Used</sprite>
-    <sprite>sprites\spr_Abi_Select</sprite>
-    <sprite>sprites\spr_Planet_Ex</sprite>
-    <sprite>sprites\spr_Planet_Target</sprite>
-    <sprite>sprites\spr_OC_scout</sprite>
-    <sprite>sprites\spr_OC_Flyer_Sentry</sprite>
-    <sprite>sprites\spr_OC_GuardP_Arm1</sprite>
-    <sprite>sprites\spr_OC_GuardP_Arm2</sprite>
-    <sprite>sprites\spr_OC_Guard1_Body</sprite>
-    <sprite>sprites\spr_OC_Guard1_Arm1</sprite>
-    <sprite>sprites\spr_OC_Guard1_Arm2</sprite>
-    <sprite>sprites\spr_OC_Armmech</sprite>
+    <sprites name="HUD">
+      <sprite>sprites\spr_Hud</sprite>
+      <sprite>sprites\spr_Hud_Side</sprite>
+      <sprite>sprites\spr_Heat_Gauge</sprite>
+      <sprite>sprites\spr_Abi_Used</sprite>
+      <sprite>sprites\spr_Abi_Select</sprite>
+      <sprite>sprites\spr_Cursor</sprite>
+      <sprite>sprites\spr_Arrow_Tut</sprite>
+    </sprites>
+    <sprites name="map system">
+      <sprite>sprites\spr_Planet_Ex</sprite>
+      <sprite>sprites\spr_Planet_Target</sprite>
+    </sprites>
+    <sprites name="OC">
+      <sprite>sprites\spr_OC_scout</sprite>
+      <sprite>sprites\spr_OC_Flyer_Sentry</sprite>
+      <sprite>sprites\spr_OC_GuardP_Arm1</sprite>
+      <sprite>sprites\spr_OC_GuardP_Arm2</sprite>
+      <sprite>sprites\spr_OC_Guard1_Body</sprite>
+      <sprite>sprites\spr_OC_Guard1_Arm1</sprite>
+      <sprite>sprites\spr_OC_Guard1_Arm2</sprite>
+      <sprite>sprites\spr_OC_Armmech</sprite>
+      <sprite>sprites\spr_Bullet_long1</sprite>
+      <sprite>sprites\spr_Bullet_Round1</sprite>
+      <sprite>sprites\spr_Chargeball</sprite>
+    </sprites>
     <sprite>sprites\sprite29</sprite>
     <sprite>sprites\spr_shield</sprite>
     <sprite>sprites\spr_shield_small</sprite>
     <sprite>sprites\spr_Dia_Hud</sprite>
     <sprite>sprites\spr_font_dia</sprite>
-    <sprite>sprites\spr_Cursor</sprite>
     <sprite>sprites\spr_jet_start</sprite>
     <sprites name="Buttons_Main">
       <sprite>sprites\spr_button_design_simple</sprite>
@@ -74,15 +89,10 @@
       <sprite>sprites\spr_button_quit</sprite>
       <sprite>sprites\spr_button_play</sprite>
     </sprites>
-    <sprite>sprites\sprite55</sprite>
-    <sprite>sprites\spr_Arrow_Tut</sprite>
     <sprite>sprites\spr_Controls_Tut</sprite>
-    <sprite>sprites\spr_Bullet_long1</sprite>
-    <sprite>sprites\spr_Bullet_Round1</sprite>
     <sprite>sprites\spr_Ex_Beam</sprite>
     <sprite>sprites\spr_Ex_Flare</sprite>
-    <sprite>sprites\spr_Chargeball</sprite>
-    <sprite>sprites\sprite70</sprite>
+    <sprite>sprites\spr_Faces</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -109,8 +119,12 @@
       <object>objects\obj_OC_Scout</object>
       <object>objects\obj_OC_Parent</object>
       <object>objects\obj_OC_Guard1_Body</object>
+      <object>objects\obj_Bullet_Long1</object>
+      <object>objects\obj_Bullet_Round1</object>
       <object>objects\obj_OC_Guard1_armR</object>
       <object>objects\obj_OC_Armmech</object>
+      <object>objects\obj_ChargeballR</object>
+      <object>objects\obj_ChargeballL</object>
     </objects>
     <objects name="map system">
       <object>objects\obj_Planet_1</object>
@@ -131,6 +145,9 @@
         <object>objects\obj_Ice_Bolt</object>
         <object>objects\obj_Ice_Arrow</object>
         <object>objects\obj_Bigweps_Parent</object>
+        <object>objects\obj_Bigbeam2</object>
+        <object>objects\obj_Bigbeam_create</object>
+        <object>objects\obj_Smallbeam2</object>
         <objects name="Effects">
           <object>objects\obj_Fire_Effect</object>
           <object>objects\obj_Ice_Effect</object>
@@ -159,14 +176,10 @@
     <object>objects\obj_target</object>
     <object>objects\obj_BeamShield_Weak_Parent</object>
     <object>objects\obj_BeamShield_target_small</object>
-    <object>objects\obj_Bullet_Long1</object>
-    <object>objects\obj_Bullet_Round1</object>
     <object>objects\obj_Ex_Flare</object>
     <object>objects\obj_Ex_Beam</object>
     <object>objects\obj_Ex_Simple</object>
     <object>objects\obj_clickboom</object>
-    <object>objects\obj_ChargeballR</object>
-    <object>objects\obj_ChargeballL</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_pre</room>

@@ -195,11 +195,8 @@ if action = 4{
     varset -= 1;
     if varset &lt; 1 action = 2;
 }
-
-
 if keyboard_check(vk_left) image_angle += 1;
 if keyboard_check(vk_right) image_angle -= 1;
-
 if hull &lt; 1 instance_destroy();
 </string>
           </argument>

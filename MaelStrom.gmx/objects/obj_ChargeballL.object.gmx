@@ -77,7 +77,7 @@ image_angle = 180;
             <kind>1</kind>
             <string>if charge &lt; 40{
     charge += 1;
-    image_xscale = (100/40)*charge/100;
+    image_xscale = (100/60)*charge/100;
     image_yscale = image_xscale;
     if charge = 40{
         speed = 12;
@@ -90,6 +90,7 @@ image_angle = 180;
             direction = 240 + random(60);
         }
     }
+    if !instance_position(x+20,y+5,obj_OC_Armmech) instance_destroy();
 }
 </string>
           </argument>

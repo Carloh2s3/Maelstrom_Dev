@@ -128,6 +128,7 @@
   <option_ios_orient_portrait>-1</option_ios_orient_portrait>
   <option_ios_orient_portrait_upside_down>-1</option_ios_orient_portrait_upside_down>
   <option_ios_provisioning>&lt; Press refresh to fetch provisioning list from Mac&gt;</option_ios_provisioning>
+  <option_ios_set_device_id></option_ios_set_device_id>
   <option_ios_splash_png>Configs\Default\ios\splash.png</option_ios_splash_png>
   <option_ios_texture_page>1024</option_ios_texture_page>
   <option_ios_use_test_ads>0</option_ios_use_test_ads>
@@ -270,6 +271,7 @@
   <option_windows_release_version>0</option_windows_release_version>
   <option_windows_runner_finished>Configs\Default\windows\Runner_finish.bmp</option_windows_runner_finished>
   <option_windows_runner_header>Configs\Default\windows\Runner_header.bmp</option_windows_runner_header>
+  <option_windows_save_location>0</option_windows_save_location>
   <option_windows_splash_screen>Configs\Default\windows\splash.png</option_windows_splash_screen>
   <option_windows_steam_app_id>0</option_windows_steam_app_id>
   <option_windows_texture_page>2048</option_windows_texture_page>

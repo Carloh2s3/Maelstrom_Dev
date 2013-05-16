@@ -118,6 +118,7 @@
     <objects name="OC">
       <object>objects\obj_OC_Scout</object>
       <object>objects\obj_OC_Parent</object>
+      <object>objects\obj_OC_Bulletparent</object>
       <object>objects\obj_OC_Guard1_Body</object>
       <object>objects\obj_Bullet_Long1</object>
       <object>objects\obj_Bullet_Round1</object>

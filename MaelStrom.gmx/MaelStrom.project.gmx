@@ -51,6 +51,7 @@
       <sprite>sprites\spr_Abi_Select</sprite>
       <sprite>sprites\spr_Cursor</sprite>
       <sprite>sprites\spr_Arrow_Tut</sprite>
+      <sprite>sprites\spr_Menu_Map</sprite>
     </sprites>
     <sprites name="map system">
       <sprite>sprites\spr_Planet_Ex</sprite>
@@ -93,6 +94,8 @@
     <sprite>sprites\spr_Ex_Beam</sprite>
     <sprite>sprites\spr_Ex_Flare</sprite>
     <sprite>sprites\spr_Faces</sprite>
+    <sprite>sprites\spr_back_clouds</sprite>
+    <sprite>sprites\spr_back_island</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>

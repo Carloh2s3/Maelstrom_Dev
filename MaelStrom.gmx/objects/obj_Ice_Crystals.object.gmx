@@ -53,7 +53,7 @@ image_alpha = 0.3 + random(0.4)
             <kind>1</kind>
             <string>if collision_circle(x,y,6,obj_OC_Parent,false,false)
 {
-    if instance_nearest(x,y,obj_OC_Parent).freezing = 0 instance_destroy() //NOT DONE, needs more effectery
+    if instance_nearest(x,y,obj_OC_Parent).freezing = 0 instance_destroy() //NOT DONE, needs more effectery and tweaking
 }
 else 
 if ! collision_circle(x,y,6,obj_OC_Parent,false,false) instance_destroy()

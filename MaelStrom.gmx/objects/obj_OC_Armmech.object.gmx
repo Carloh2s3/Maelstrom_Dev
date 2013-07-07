@@ -37,7 +37,9 @@ image_index = 0;
 holdingR = 0;
 holdingL = 0;
 multi = 0;
-
+OC_ID = 3;
+freezing = 0;
+burning = 0;
 </string>
           </argument>
         </arguments>

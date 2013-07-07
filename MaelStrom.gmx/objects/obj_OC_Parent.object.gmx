@@ -25,10 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if hull &lt; other.hull instance_destroy() else {
-    hull -= instance_nearest(x,y,obj_Ice_Arrow).hull;
-    with (other) instance_destroy();
-}
+            <string>hull -= instance_nearest(x,y,obj_Ice_Arrow).hull;
 </string>
           </argument>
         </arguments>
@@ -51,9 +48,22 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>hull -= 30
-with (other)
-instance_destroy()
+            <string>if OC_ID = 1{
+    hull -= 30
+    with (other) instance_destroy();
+    if freezing = 0 freezing = choose(0,1,1);
+    if freezing = 1 {
+        alarm[2] = 90;
+        freezing = 2;
+        repeat(10+random(4)){
+            instance_create(x-5+random(10),y-5+random(10),obj_Ice_Crystals);
+        }
+    }
+    if burning = 1 {burning = 0; freezing = 0};
+}else{
+    hull -= 30;
+    with (other) instance_destroy();
+}
 </string>
           </argument>
         </arguments>
@@ -76,9 +86,17 @@ instance_destroy()
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>hull -= 30
-with (other)
-instance_destroy()
+            <string>if OC_ID = 1{
+    hull -= 30;
+    with (other) instance_destroy();
+
+    if burning = 0 burning = 1;
+    if burning = 1 alarm[3] = 50+random(40);
+    if freezing = 1 or freezing = 2 {freezing = 0; burning = 0};
+}else{
+    hull -= 30;
+    with (other) instance_destroy();
+}
 </string>
           </argument>
         </arguments>
@@ -210,12 +228,16 @@ hull -= 80
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>hull -= 120
-with (other)
-{
-    instance_destroy()
+            <string>if OC_ID = 1{
+    speed += 15
+    direction = point_direction(x,y,(other).x,(other).y)-210+random(60)
+    alarm[1] = 10
+    mode = 5
+    with (other) {instance_destroy()};
+} else {
+    hull -= 120
+    with (other){instance_destroy()};
 }
-
 </string>
           </argument>
         </arguments>

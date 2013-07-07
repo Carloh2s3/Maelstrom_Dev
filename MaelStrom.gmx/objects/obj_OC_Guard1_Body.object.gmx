@@ -37,6 +37,9 @@ angle = 0;
 bulspeed1 = 10;
 bulspeed2 = 7;
 hull = 500;
+OC_ID = 2;
+freezing = 0;
+burning = 0;
 </string>
           </argument>
         </arguments>

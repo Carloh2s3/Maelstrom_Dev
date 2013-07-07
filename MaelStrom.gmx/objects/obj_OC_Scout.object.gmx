@@ -35,61 +35,13 @@ freezing = 0
 burning = 0
 global.noticed = 0
 hull = 50
-OC_ID = 1
+OC_ID = 1;
 </string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>605</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>0</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>LOOK IN DESTROYED EVENT</string>
           </argument>
         </arguments>
       </action>
     </event>
     <event eventtype="1" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>201</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_create_object</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>10</kind>
-            <object>obj_OC_Scout</object>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>random(room_width)</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>-30</string>
-          </argument>
-        </arguments>
-      </action>
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -106,7 +58,8 @@ OC_ID = 1
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if !y &lt; -50 instance_create(x,y,obj_Ex_Simple)
+            <string>instance_create(random(room_width),-30,obj_OC_Scout);
+if (y &gt; -50) instance_create(x,y,obj_Ex_Simple);
 </string>
           </argument>
         </arguments>
@@ -243,7 +196,9 @@ instance_destroy()
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if instance_number(obj_Hayase) != 0 nearest = instance_nearest(x,y,obj_Hayase)
+            <string>/*
+if hull &lt; 1 instance_destroy();
+if instance_number(obj_Hayase) != 0 nearest = instance_nearest(x,y,obj_Hayase)
 if instance_number(obj_Hayase) != 0 distance = point_distance(x,y,obj_Hayase.x,obj_Hayase.y)
 if instance_number(obj_Hayase) != 0 dir = point_direction(x,y,obj_Hayase.x,obj_Hayase.y)
 if mode = 1  and freezing = 0
@@ -266,191 +221,61 @@ if y &lt; -50
     global.noticed = 1
     instance_destroy()
 }
-if mode = 5 and freezing = 0 {image_angle += 50; effect_create_below(ef_smoke,x,y,1,c_black)}
-else
-{
-    if freezing = 1 or freezing = 2
-    {
-        if hull &lt;= 0
-        {
-            instance_destroy()
-        }
-    }
-}
-if hull &lt;= 0
-{
-    instance_destroy()
-}
+if mode = 5 and freezing = 0 {image_angle += 50; effect_create_below(ef_smoke,x,y,1,c_black)};
+
 if burning = 1 
 {
     hull -= 2
-    instance_create(x-(sprite_width/2)+random(sprite_width),y-(sprite_height/2)+random(sprite_height),obj_Flames)
+    instance_create(x-(sprite_width/2)+random(sprite_width),y-(sprite_height/2)+random(sprite_height),obj_Flames);
 }
 if freezing = 1 or freezing = 2 speed = 0
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_Ice_Bolt">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>hull -= 30
-with (other)
-instance_destroy()
-if freezing = 0 freezing = choose(0,1,1)
-if freezing = 1 {alarm[2] = 90; freezing = 2; repeat(10+random(4)) instance_create(x-5+random(10),y-5+random(10),obj_Ice_Crystals)}
-if burning = 1 {burning = 0; freezing = 0}
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_Fire_Bolt">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>hull -= 30
-with (other)
-instance_destroy()
-
-if burning = 0 burning = 1
-if burning = 1 alarm[3] = 50+random(40)
-if freezing = 1 or freezing = 2 {freezing = 0; burning = 0}
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_BigBeam">
-      <action>
-        <libid>1</libid>
-        <id>532</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_effect</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>-1</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>4</kind>
-            <string>3</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>1</string>
-          </argument>
-          <argument>
-            <kind>13</kind>
-            <string>65535</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>1</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>532</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_effect</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>-1</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>4</kind>
-            <string>1</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>1</string>
-          </argument>
-          <argument>
-            <kind>13</kind>
-            <string>16777215</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>1</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>speed += 15
-direction = point_direction(x,y,(other).x,(other).y)-210+random(60)
-alarm[1] = 10
-mode = 5
-with (other) instance_destroy();
+*/
+if instance_number(obj_Hayase) &gt; 0 nearest = instance_nearest(x,y,obj_Hayase);
+if instance_number(obj_Hayase) &gt; 0 distance = point_distance(x,y,obj_Hayase.x,obj_Hayase.y);
+if instance_number(obj_Hayase) &gt; 0 dir = point_direction(x,y,obj_Hayase.x,obj_Hayase.y);
+if freezing = 0{
+    if mode = 1{
+        if distance &gt; 120 motion_add(dir,0.5);
+        else {speed -= 1};
+        if speed &lt; 10{
+            if speed &gt; 5 speed -= 0.5
+            else speed -= 0.2;
+        }
+        if speed &lt;= 0{
+            mode = 2;
+            speed = 0;
+        }
+        image_angle = dir;
+    }
+    if mode = 2{
+        alarm[0] = 20;
+        mode = 3;
+        image_angle = dir;
+    }
+    if mode = 3{
+        //nothing
+        image_angle = dir;
+    }
+    if mode = 4{
+        image_angle = direction;
+        motion_add(90,0.1);
+    }
+    if mode = 5{
+        image_angle += 50;
+        effect_create_below(ef_smoke,x,y,1,c_black);
+    }
+} else {
+    speed = 0;
+}
+if y &lt; -50{
+    global.noticed = 1;
+    instance_destroy();
+}
+if burning = 1{
+    hull -= 2;
+    instance_create(x-(sprite_width/2)+random(sprite_width),y-(sprite_height/2)+random(sprite_height),obj_Flames);
+}
+if hull &lt; 1 instance_destroy();
 </string>
           </argument>
         </arguments>

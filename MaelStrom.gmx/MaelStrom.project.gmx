@@ -40,6 +40,7 @@
     </sprites>
     <sprite>sprites\spr_cageeater</sprite>
     <sprite>sprites\spr_init_game</sprite>
+    <sprite>sprites\spr_init_gameReal</sprite>
     <sprite>sprites\spr_Hayase</sprite>
     <sprite>sprites\spr_Hayase_Jet</sprite>
     <sprite>sprites\spr_SingleEffect</sprite>
@@ -96,10 +97,13 @@
     <sprite>sprites\spr_Faces</sprite>
     <sprite>sprites\spr_back_clouds</sprite>
     <sprite>sprites\spr_back_island</sprite>
+    <sprite>sprites\spr_backPHtree</sprite>
+    <sprite>sprites\spr_PHbuilding1</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
     <background>background\bg_main</background>
+    <background>background\bg_PHsand</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -114,8 +118,10 @@
       <object>objects\obj_button_play</object>
       <object>objects\obj_button_quit</object>
       <object>objects\obj_button_test</object>
+      <object>objects\obj_button_settings</object>
       <object>objects\obj_button_test_1</object>
       <object>objects\obj_button_test_2</object>
+      <object>objects\obj_button_settings_fullscreen</object>
       <object>objects\obj_button_test_back</object>
     </objects>
     <objects name="OC">
@@ -167,10 +173,10 @@
       <object>objects\obj_Important</object>
       <object>objects\obj_Cursor1</object>
       <object>objects\obj_Cursor2</object>
-      <object>objects\obj_Weapon_Line</object>
+      <object>objects\obj_Draw_Action1_Wep5</object>
       <object>objects\obj_Weapon_Circle</object>
       <object>objects\obj_Action1_Wep5_Mark</object>
-      <object>objects\obj_Draw_Action1_Wep5</object>
+      <object>objects\obj_Weapon_Line</object>
     </objects>
     <objects name="dialogue">
       <object>objects\obj_Dia_Test</object>
@@ -184,11 +190,16 @@
     <object>objects\obj_Ex_Beam</object>
     <object>objects\obj_Ex_Simple</object>
     <object>objects\obj_clickboom</object>
+    <object>objects\obj_spawnOCScout</object>
+    <object>objects\obj_spawnOCGuard</object>
+    <object>objects\obj_spawnOCArmmech</object>
+    <object>objects\obj_spawnTestLevel</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_pre</room>
     <room>rooms\room_main</room>
     <room>rooms\room_main_test</room>
+    <room>rooms\room_main_settings</room>
     <room>rooms\room_play</room>
     <room>rooms\room_map</room>
     <room>rooms\room_Test_Uni</room>

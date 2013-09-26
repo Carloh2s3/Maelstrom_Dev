@@ -25,16 +25,17 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>speed = 5
-direction = 270
-nearest = instance_nearest(x,y,obj_Hayase)
-distance = point_distance(x,y,obj_Hayase.x,obj_Hayase.y)
-dir = point_direction(x,y,obj_Hayase.x,obj_Hayase.y)
-mode = 1
-freezing = 0
-burning = 0
-global.noticed = 0
-hull = 50
+            <string>freezing = 0;
+burning = 0;
+speed = 5;
+direction = 270;
+nearest = instance_nearest(x,y,obj_Hayase);
+distance = point_distance(x,y,obj_Hayase.x,obj_Hayase.y);
+dir = point_direction(x,y,obj_Hayase.x,obj_Hayase.y);
+mode = 1;
+alarm[4] = 2;
+global.noticed = 0;
+hull = 50;
 OC_ID = 1;
 </string>
           </argument>
@@ -233,12 +234,12 @@ if freezing = 1 or freezing = 2 speed = 0
 if instance_number(obj_Hayase) &gt; 0 nearest = instance_nearest(x,y,obj_Hayase);
 if instance_number(obj_Hayase) &gt; 0 distance = point_distance(x,y,obj_Hayase.x,obj_Hayase.y);
 if instance_number(obj_Hayase) &gt; 0 dir = point_direction(x,y,obj_Hayase.x,obj_Hayase.y);
-if freezing = 0{
-    if mode = 1{
+if freezing == 0{
+    if mode == 1{
         if distance &gt; 120 motion_add(dir,0.5);
         else {speed -= 1};
         if speed &lt; 10{
-            if speed &gt; 5 speed -= 0.5
+            if speed &gt; 5 speed -= 0.5;
             else speed -= 0.2;
         }
         if speed &lt;= 0{
@@ -247,20 +248,20 @@ if freezing = 0{
         }
         image_angle = dir;
     }
-    if mode = 2{
+    if mode == 2{
         alarm[0] = 20;
         mode = 3;
         image_angle = dir;
     }
-    if mode = 3{
+    if mode == 3{
         //nothing
         image_angle = dir;
     }
-    if mode = 4{
+    if mode == 4{
         image_angle = direction;
         motion_add(90,0.1);
     }
-    if mode = 5{
+    if mode == 5{
         image_angle += 50;
         effect_create_below(ef_smoke,x,y,1,c_black);
     }
@@ -271,7 +272,7 @@ if y &lt; -50{
     global.noticed = 1;
     instance_destroy();
 }
-if burning = 1{
+if burning == 1{
     hull -= 2;
     instance_create(x-(sprite_width/2)+random(sprite_width),y-(sprite_height/2)+random(sprite_height),obj_Flames);
 }
@@ -293,5 +294,8 @@ if hull &lt; 1 instance_destroy();
   <PhysicsObjectFriction>0.200000002980232</PhysicsObjectFriction>
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
-  <PhysicsShapePoints/>
+  <PhysicsShapePoints>
+    <point>32,32</point>
+    <point>32,32</point>
+  </PhysicsShapePoints>
 </object>

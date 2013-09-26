@@ -8,6 +8,35 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="4" ename="obj_Bigbeam2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>hull -= 20;
+with (other)
+{
+    effect_create_above(ef_ring,x,y,1,c_yellow)
+    instance_destroy()
+}
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="4" ename="obj_Ice_Arrow">
       <action>
         <libid>1</libid>
@@ -52,7 +81,7 @@
     hull -= 30
     with (other) instance_destroy();
     if freezing = 0 freezing = choose(0,1,1);
-    if freezing = 1 {
+    if freezing = 1{
         alarm[2] = 90;
         freezing = 2;
         repeat(10+random(4)){

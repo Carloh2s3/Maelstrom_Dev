@@ -99,6 +99,10 @@
     <sprite>sprites\spr_back_island</sprite>
     <sprite>sprites\spr_backPHtree</sprite>
     <sprite>sprites\spr_PHbuilding1</sprite>
+    <sprite>sprites\spr_Lasertile</sprite>
+    <sprite>sprites\spr_Lasertile2</sprite>
+    <sprite>sprites\spr_Flamebomb</sprite>
+    <sprite>sprites\spr_Mask_Flamebomb</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -158,6 +162,10 @@
         <object>objects\obj_Bigbeam2</object>
         <object>objects\obj_Bigbeam_create</object>
         <object>objects\obj_Smallbeam2</object>
+        <object>objects\obj_Neutra_Blast</object>
+        <object>objects\obj_Flamebomb_boom</object>
+        <object>objects\obj_Flamebomb</object>
+        <object>objects\obj_Flamebomb_mark</object>
         <objects name="Effects">
           <object>objects\obj_Fire_Effect</object>
           <object>objects\obj_Ice_Effect</object>
@@ -173,10 +181,14 @@
       <object>objects\obj_Important</object>
       <object>objects\obj_Cursor1</object>
       <object>objects\obj_Cursor2</object>
+      <object>objects\obj_Draw_Action1_Wep4</object>
       <object>objects\obj_Draw_Action1_Wep5</object>
+      <object>objects\obj_Draw_Action1_Wep6</object>
       <object>objects\obj_Weapon_Circle</object>
       <object>objects\obj_Action1_Wep5_Mark</object>
+      <object>objects\obj_Action1_Wep6_Mark</object>
       <object>objects\obj_Weapon_Line</object>
+      <object>objects\obj_LaserController</object>
     </objects>
     <objects name="dialogue">
       <object>objects\obj_Dia_Test</object>
@@ -194,6 +206,8 @@
     <object>objects\obj_spawnOCGuard</object>
     <object>objects\obj_spawnOCArmmech</object>
     <object>objects\obj_spawnTestLevel</object>
+    <object>objects\obj_TestLaser</object>
+    <object>objects\object79</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_pre</room>

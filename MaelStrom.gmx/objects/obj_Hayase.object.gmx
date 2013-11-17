@@ -135,6 +135,7 @@ if keyboard_check(vk_space)
             }
         }  
     }
+    //level 6
     if global.Level_General = 6 or global.Level_General = 7
     {
         if global.Weapon_Selected = 5
@@ -147,6 +148,7 @@ if keyboard_check(vk_space)
             }
         }
     }
+    //level 7
     if global.Level_General = 7
     {
         if global.Weapon_Selected = 6
@@ -467,7 +469,8 @@ if global.Heat_Gauge &lt;= 103 and global.P_onfire = 1 global.P_onfire = 0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if !collision_circle(x,y,6,obj_Bigweps_Parent,false,true) global.Weapon_Selected += 1
+            <string>if !mouse_check_button_pressed(mb_left) global.Weapon_Selected += 1
+//collision_circle(x,y,6,obj_Bigweps_Parent,false,true)
 </string>
           </argument>
         </arguments>
@@ -490,7 +493,36 @@ if global.Heat_Gauge &lt;= 103 and global.P_onfire = 1 global.P_onfire = 0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if !collision_circle(x,y,6,obj_Bigweps_Parent,false,true) global.Weapon_Selected -= 1
+            <string>if !mouse_check_button_pressed(mb_left) global.Weapon_Selected -= 1
+//collision_circle(x,y,6,obj_Bigweps_Parent,false,true)
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="6" enumb="54">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if global.Weapon_Selected = 2 and global.DL_Wep2 &lt;= 0{
+    instance_create(x,y,obj_Bigbeam_create)
+    global.DL_Wep2 = 20
+    global.Heat_Gauge += 20
+}
+
 </string>
           </argument>
         </arguments>
@@ -513,11 +545,20 @@ if global.Heat_Gauge &lt;= 103 and global.P_onfire = 1 global.P_onfire = 0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if global.Weapon_Selected = 5 and global.DL_Wep5 &lt;= 0{
+            <string>if global.Weapon_Selected = 4 and global.DL_Wep4 &lt;= 0{
+    instance_create(x,y,obj_Draw_Action1_Wep4)
+    global.DL_Wep4 = 10
+    global.Heat_Gauge += 30
+}
+if global.Weapon_Selected = 5 and global.DL_Wep5 &lt;= 0{
     instance_create(x,y,obj_Ice_Arrow)
     instance_create(x,y,obj_Draw_Action1_Wep5)
-    global.DL_wep5 = 10
+    global.DL_Wep5 = 10
     global.Heat_Gauge -= 30
+}
+if global.Weapon_Selected = 6 and global.DL_Wep6 &lt;= 0{
+    instance_create(x,y,obj_Neutra_Blast);
+    global.DL_Wep6 = 10
 }
 </string>
           </argument>

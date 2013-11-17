@@ -85,5 +85,8 @@ instance_create(x-5+random(10),y-5+random(10),obj_Ice_Effect_Big)
   <PhysicsObjectFriction>0.200000002980232</PhysicsObjectFriction>
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
-  <PhysicsShapePoints/>
+  <PhysicsShapePoints>
+    <point>77,39</point>
+    <point>77,77</point>
+  </PhysicsShapePoints>
 </object>

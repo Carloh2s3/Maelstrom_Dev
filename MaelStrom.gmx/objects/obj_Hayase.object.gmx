@@ -104,8 +104,8 @@ if keyboard_check(vk_space)
             if global.DL_Wep2 &lt;= 0
             {
                 instance_create(x,y,obj_BigBeam)
-                global.DL_Wep2 = 30
-                global.Heat_Gauge += 10
+                global.DL_Wep2 = 20
+                global.Heat_Gauge += 5
             }
         }
     }
@@ -518,9 +518,9 @@ if global.Heat_Gauge &lt;= 103 and global.P_onfire = 1 global.P_onfire = 0
           <argument>
             <kind>1</kind>
             <string>if global.Weapon_Selected = 2 and global.DL_Wep2 &lt;= 0{
-    instance_create(x,y,obj_Bigbeam_create)
-    global.DL_Wep2 = 20
-    global.Heat_Gauge += 20
+    instance_create(x,y,obj_Beam_Awesome);
+    global.DL_Wep2 = 15;
+    global.Heat_Gauge += 8;
 }
 
 </string>

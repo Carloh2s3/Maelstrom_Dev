@@ -4,7 +4,9 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\main_menu</sound>
+  </sounds>
   <sprites name="sprites">
     <sprites name="skills">
       <sprite>sprites\spr_Action1_Circle</sprite>

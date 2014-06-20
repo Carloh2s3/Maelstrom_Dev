@@ -78,6 +78,20 @@ if dia_progress &gt; dia_max instance_destroy()
             <kind>1</kind>
             <string>draw_sprite(spr_Dia_Hud,-1,x,y)
 font_add_sprite(spr_font_dia,32,true,0)
+switch(dia_progress)
+{
+    case 1: draw_text(x+100,y+30,"random text just to test out stuff");
+    break;
+    case 2: draw_text(x+100,y+30,"just so you know, this might work or not");
+    break;
+    case 3: draw_text(x+100,y+30,"now we're trying out two lines of text#well did it work?");
+    break;
+    case 4: draw_text(x+100,y+30,"pancakes");
+    break;
+    case 5: draw_text(x+100,y+30,"random text appeared!");
+    break;
+}
+/*
 if dia_progress = 1
 {
     draw_text(x+100,y+30,"random text just to test out stuff")
@@ -97,7 +111,7 @@ if dia_progress = 4
 if dia_progress = 5
 {
     draw_text(x+100,y+30,"random text appeared!")
-}
+}*/
 </string>
           </argument>
         </arguments>
@@ -115,5 +129,8 @@ if dia_progress = 5
   <PhysicsObjectFriction>0.200000002980232</PhysicsObjectFriction>
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
-  <PhysicsShapePoints/>
+  <PhysicsShapePoints>
+    <point>0,0</point>
+    <point>240,240</point>
+  </PhysicsShapePoints>
 </object>

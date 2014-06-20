@@ -25,11 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string> mode = 0;
-posy1 = point_distance(x,y,0,-416);
-posy2 = point_distance(x,y,0,0);
-disvar = posy2;
-dirvar = 90;
+            <string>mode = 0;
+posy1 = 0;
+posy2 = -416;
+moving = 0;
 //mode 0 = top, mode 1 = bottom
 </string>
           </argument>
@@ -53,8 +52,17 @@ dirvar = 90;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if y &lt; -416 y = -416;
-if y &gt; 0 y = 0;
+            <string>switch(mode)
+{
+    case 0:
+        if y &lt; posy1 y += 10;
+        else y = posy1;
+    break;
+    case 1:
+        if y &gt; posy2 y -= 10;
+        else y = posy2;
+    break;
+}
 </string>
           </argument>
         </arguments>
@@ -77,23 +85,15 @@ if y &gt; 0 y = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//moet 400 pixels naar beneden/omhoog bewegen
-posy1 = point_distance(x,y,0,-416);
-posy2 = point_distance(x,y,0,0);
-if y = -416
+            <string>switch(mode)
 {
-    disvar = posy2;
-    dirvar = 270;
+    case 0:
+        mode = 1;
+    break;
+    case 1:
+        mode = 0;
+    break;
 }
-if y = 0
-{
-    disvar = posy1;
-    dirvar = 90;
-}
-motion_set(dirvar,disvar/15);
-
-mode ++;
-if mode &gt; 1 mode = 0;
 </string>
           </argument>
         </arguments>

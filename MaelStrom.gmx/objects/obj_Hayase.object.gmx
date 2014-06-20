@@ -131,7 +131,7 @@ if keyboard_check(vk_space)
             {
                 instance_create(x,y,obj_Fire_Bolt)
                 global.DL_Wep4 = 7
-                if global.Heat_Gauge &gt; 100 global.Heat_Gauge += 10 else global.Heat_Gauge += 5
+                if global.Heat_Gauge &gt; 100 global.Heat_Gauge += 10 else global.Heat_Gauge += 5;
             }
         }  
     }
@@ -144,7 +144,7 @@ if keyboard_check(vk_space)
             {
                 instance_create(x,y,obj_Ice_Bolt)
                 global.DL_Wep5 = 7
-                if global.Heat_Gauge &lt;= 100 global.Heat_Gauge -= 10 else global.Heat_Gauge -= 5
+                if global.Heat_Gauge &lt;= 100 global.Heat_Gauge -= 10 else global.Heat_Gauge -= 5;
             }
         }
     }
@@ -548,13 +548,13 @@ if global.Heat_Gauge &lt;= 103 and global.P_onfire = 1 global.P_onfire = 0
             <string>if global.Weapon_Selected = 4 and global.DL_Wep4 &lt;= 0{
     instance_create(x,y,obj_Draw_Action1_Wep4)
     global.DL_Wep4 = 10
-    global.Heat_Gauge += 30
+    if global.Heat_Gauge &gt; 100 global.Heat_Gauge += 30 else global.Heat_Gauge += 15;
 }
 if global.Weapon_Selected = 5 and global.DL_Wep5 &lt;= 0{
     instance_create(x,y,obj_Ice_Arrow)
     instance_create(x,y,obj_Draw_Action1_Wep5)
     global.DL_Wep5 = 10
-    global.Heat_Gauge -= 30
+    if global.Heat_Gauge &lt; 100 global.Heat_Gauge -= 30 else global.Heat_Gauge -= 15;
 }
 if global.Weapon_Selected = 6 and global.DL_Wep6 &lt;= 0{
     instance_create(x,y,obj_Neutra_Blast);

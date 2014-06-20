@@ -58,8 +58,7 @@ speed = 32;
     hullpower -= 1;
     
 }
-else
-{
+/*{
     if collision_rectangle(x-16,y+(sprite_height*image_yscale),x+15,y-32,obj_OC_Parent,false,false)
     {
         move_contact_all(90,speed);
@@ -69,8 +68,34 @@ else
     {
         speed = 32;
     }
-}
+}*/
 
+if !instance_position(x,y,obj_OC_Parent) speed = 32;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_OC_Parent">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>move_contact_all(90,speed);
+speed = 0;
+image_yscale -= 0.1;
 if image_yscale = 0 instance_destroy();
 </string>
           </argument>

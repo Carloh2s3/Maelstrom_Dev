@@ -25,18 +25,17 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>freezing = 0;
-burning = 0;
+            <string>eny_init(1, 5, 2, 100);
 speed = 5;
 direction = 270;
 nearest = instance_nearest(x,y,obj_Hayase);
 distance = point_distance(x,y,obj_Hayase.x,obj_Hayase.y);
 dir = point_direction(x,y,obj_Hayase.x,obj_Hayase.y);
 mode = 1;
+
 alarm[4] = 2;
+
 global.noticed = 0;
-hull = 50;
-OC_ID = 1;
 </string>
           </argument>
         </arguments>

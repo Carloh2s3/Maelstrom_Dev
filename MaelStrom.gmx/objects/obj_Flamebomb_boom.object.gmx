@@ -112,8 +112,8 @@ with instance_create(x,y,obj_Fire_Effect)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_sprite_ext(spr_Flamebomb,1,x,y,1,1,rot2,c_white,image_alpha);
-draw_sprite_ext(spr_Flamebomb,0,x,y,1,1,rot1,c_white,image_alpha);
+            <string>draw_sprite_ext(spr_Flamebomb_Darkness,1,x,y,1,1,rot2,c_white,image_alpha);
+draw_sprite_ext(spr_Flamebomb_Darkness,0,x,y,1,1,rot1,c_white,image_alpha);
 </string>
           </argument>
         </arguments>

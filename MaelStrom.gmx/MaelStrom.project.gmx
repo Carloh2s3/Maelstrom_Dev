@@ -28,6 +28,7 @@
       <sprite>sprites\spr_MachGun</sprite>
       <sprite>sprites\spr_Ice_Bolt</sprite>
       <sprite>sprites\spr_Fire_Bolt</sprite>
+      <sprite>sprites\spr_Fire_Darkness</sprite>
       <sprite>sprites\spr_Neutra_Green</sprite>
       <sprite>sprites\spr_Neutra_Blue</sprite>
       <sprite>sprites\spr_Neutra_glow</sprite>
@@ -40,6 +41,7 @@
       <sprite>sprites\spr_Firebolt2</sprite>
       <sprite>sprites\spr_Mask_Flamebomb</sprite>
       <sprite>sprites\spr_Flamebomb</sprite>
+      <sprite>sprites\spr_Flamebomb_Darkness</sprite>
       <sprite>sprites\spr_Forceblast</sprite>
     </sprites>
     <sprite>sprites\spr_cageeater</sprite>
@@ -118,6 +120,8 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\script_enemyspawn.gml</script>
+    <script>scripts\eny_init.gml</script>
+    <script>scripts\eny_onFire.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_Effects_Parent</object>
@@ -228,6 +232,10 @@
     <room>rooms\room_Test_Uni</room>
     <room>rooms\room_Test_Duo</room>
   </rooms>
+  <constants number="2">
+    <constant name="GM_build_date">41919.4294469907</constant>
+    <constant name="GM_version">'100'</constant>
+  </constants>
   <help>
     <rtf>help.rtf</rtf>
   </help>

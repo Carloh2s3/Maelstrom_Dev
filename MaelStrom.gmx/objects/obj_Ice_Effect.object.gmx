@@ -29,7 +29,7 @@
 modifier = choose(0,0.005,0.01,0.015,0.02,0.025)
 image_xscale = 0.2 + random(0.6)
 image_yscale = image_xscale
-image_angle = instance_nearest(x,y,obj_Ice_Bolt).direction + random(360)
+image_angle = random(360)
 </string>
           </argument>
         </arguments>
